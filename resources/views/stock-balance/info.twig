@@ -1,0 +1,36 @@
+{% extends "layouts/base.twig" %}
+{% block title %}Eshop - Retail System Warehouse{% endblock %}
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+    <div class="container" style="display: flex; justify-content: center; column-gap: 2em;">
+        <div>
+            <h3>Products missing from eshop - Total ({{ eshop_products_not_found|length }})</h3>
+            <ul style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
+                {% for key,product in eshop_products_not_found %}
+                    <li>Product Code: {{ product['product_code'] }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <h3>Prices Mismatch - Total ({{ prices_mismatch|length }})</h3>
+            <ul style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
+                {% for key,product in prices_mismatch %}
+                    <li>Product Code: {{ product }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+        <div>
+            <h3>Stock Mismatch - Total ({{ stock_mismatch|length }})</h3>
+            <ul style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
+                {% for key,product in stock_mismatch %}
+                    <li>Product Code: {{ product }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+{% endblock %}
+
+

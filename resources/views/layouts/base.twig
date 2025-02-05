@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {#    <link rel="stylesheet" href="style.css"/>#}
+    <script type="module" src="/builds/index.js"></script>
+    <link rel="stylesheet" href="/builds/index.css">
+    {% block head %}
+        <title>{% block title %}{% endblock %} - CODEXDELTA</title>
+    {% endblock %}
+</head>
+<body>
+<div id="content">{% block content %}{% endblock %}</div>
+<div id="footer">
+    {% block footer %}
+        <p class="blue"> &copy; Copyright 2024 by <a href="https://codexdelta.com/">CODEXDELTA</a></p>
+    {% endblock %}
+</div>
+</body>
+</html>

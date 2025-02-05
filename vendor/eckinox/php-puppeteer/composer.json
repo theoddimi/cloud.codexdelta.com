@@ -1,0 +1,33 @@
+{
+	"name" : "eckinox/php-puppeteer",
+	"description" : "PHP Wrapper for Google Chrome Puppeteer",
+	"keywords" : [
+		"PHP",
+		"Puppeteer",
+		"PDF",
+		"Screenshot"
+	],
+	"homepage" : "http://github.com/eckinox/php-puppeteer",
+	"authors" : [
+		{
+			"name" : "its404",
+			"email" : "benwk424@gmail.com",
+			"role" : "Original developer"
+		},
+		{
+			"name": "Émile Perron",
+			"email": "contact@emileperron.com",
+			"role": "Maintainer"
+		}
+	],
+	"type" : "php-wrapper",
+	"license" : "MIT",
+	"require" : {
+		"php" : ">=5.4.0"
+	},
+	"autoload" : {
+		"psr-4" : {
+			"Eckinox\\PhpPuppeteer\\" : "src"
+		}
+	}
+}

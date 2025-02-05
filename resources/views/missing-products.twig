@@ -1,0 +1,19 @@
+{% extends "layouts/base.twig" %}
+{% block title %}home{% endblock %}
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+    <h1>Products missing from compare list - Total ({{ products|length }})</h1>
+
+    {% for key,product in products %}
+        <ul>
+            <li>Product: {{ product['name'] }}</li>
+            <li>Product id: {{ product['id'] }}</li>
+            <li>Eshop URL: <a href="{{ product['permalink'] }}">{{ product['permalink'] }}</a></li>
+            <li>Product SKU: {{ product['sku'] }}</li>
+        </ul>
+    {% endfor %}
+{% endblock %}
+

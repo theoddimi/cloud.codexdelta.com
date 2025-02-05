@@ -1,0 +1,26 @@
+body {
+    background: #fff;
+}
+
+.blue {
+    color: blue;
+    font-weight: bold;
+}
+
+.red {
+    color: red;
+}
+
+.green {
+    color: red;
+}
+
+.low_profit {
+    font-weight: 900;
+    color: red;
+}
+
+.normal_profit {
+    font-weight: 900;
+    color: greenyellow;
+}

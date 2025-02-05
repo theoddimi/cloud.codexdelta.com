@@ -1,0 +1,15 @@
+{% extends "layouts/base.twig" %}
+{% block title %}404{% endblock %}
+{% block head %}
+    {{ parent() }}
+    <style type="text/css">
+        .important { color: #336699; }
+    </style>
+{% endblock head %}
+
+{% block content %}
+    <h1>404</h1>
+    <p class="important">
+        You've reached the end of Internet.
+    </p>
+{% endblock %}

@@ -1,0 +1,36 @@
+{
+    "name": "theo/crawler.codexdelta",
+    "description": "Multipurpose tool for search and find specific patterns from api's or DOM",
+    "type": "project",
+    "require": {
+        "vlucas/phpdotenv": "^5.6",
+        "phpmailer/phpmailer": "^6.9",
+        "symfony/http-foundation": "^6.4",
+        "symfony/var-dumper": "^6.4",
+        "twig/twig": "^3.0",
+        "symfony/dom-crawler": "^6.4",
+        "symfony/css-selector": "^6.4",
+        "eckinox/php-puppeteer": "^1.0",
+        "doctrine/dbal": "^4",
+        "doctrine/orm": "^3",
+        "symfony/cache": "^7"
+    },
+    "license": "MIT",
+    "autoload": {
+        "files": [
+            "libs/helpers.php"
+        ],
+        "psr-0": {"": "src/"},
+        "psr-4": {
+            "Codexdelta\\App\\": "src/",
+            "Codexdelta\\Libs\\": "libs/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Theodoros Dimitriadis",
+            "email": "theoddimi@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable"
+}

@@ -1,0 +1,1676 @@
+{
+  "ref_eshop": [
+    {
+      "merchant_product_id" : 204661751,
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48096229/Tommee-Tippee-Deluxe-Light-Sound-Sleep-Aid-Ollie-Owl-apo-Yfasma-me-%CE%99chous-gia-Neogennita-30022WF.html",
+      "skroutz_page_product_id" : 48096229,
+      "title" : "Mini Ollie 491648",
+      "eshop_product_id" : 3921,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/45822834/Tommee-Tippee-Deluxe-Light-Sound-Sleep-Aid-Ollie-Owl-apo-Yfasma-me-%CE%99chous-gia-Neogennita.html",
+      "skroutz_page_product_id" : 45822834,
+      "title" : "Tommee Tippee Deluxe Light & Sound Sleep Aid Ollie Owl από Ύφασμα με Ήχους για Νεογέννητα",
+      "eshop_product_id" : 3941,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42956656/Grobag-Kremasto-Paichnidi-Kounias-kai-Karotsiou-me-Mousiki-Pip-Panda-gia-Neogennita.html",
+      "skroutz_page_product_id" : 42956656,
+      "title" : "Grobag Κρεμαστό Παιχνίδι Κούνιας και Καροτσιού με Μουσική Pip-Panda για Νεογέννητα",
+      "eshop_product_id" : 11520,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/20947622/Tommee-Tippee-Kados-Aporripsis-Panon-Twist-and-Click-Green-510242.html",
+      "skroutz_page_product_id" : 20947622,
+      "title" : "Tommee Tippee Κάδος Απόρριψης Πανών Twist and Click Green",
+      "eshop_product_id" : 5673,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21405172/Tommee-Tippee-Kados-Aporripsis-Panon-Twist-and-Click-Mple.html",
+      "skroutz_page_product_id" : 21405172,
+      "title" : "Tommee Tippee Κάδος Απόρριψης Πανών Twist and Click Blue",
+      "eshop_product_id" : 5702,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/18414820/Tommee-Tippee-Antallaktikes-Sakoules-Kadon-gia-Panes-Twist-and-Click-85102301-6tmch.html",
+      "skroutz_page_product_id" : 18414820 ,
+      "title" : "Tommee Tippee Ανταλλακτικές Σακούλες Κάδων για Πάνες Twist and Click 6τμχ",
+      "eshop_product_id" : 5740,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21405588/Tommee-Tippee-Antallaktikes-Sakoules-Kadon-gia-Panes-Twist-and-Click-85102201-3tmch.html",
+      "skroutz_page_product_id" : 21405588 ,
+      "title" : "Tommee Tippee Ανταλλακτικές Σακούλες Κάδων για Πάνες Twist and Click 3τμχ",
+      "eshop_product_id" : 5744,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54382837/Tommee-Tippee-Antallaktiki-Sakoula-Kadou-gia-Panes-2012336.html",
+      "skroutz_page_product_id" : 54382837 ,
+      "title" : "Tommee Tippee Ανταλλακτική Σακούλα Κάδου για Πάνες",
+      "eshop_product_id" : 5728,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25932991/Cosatto-Noodle-0-Anadiploumeno-Kareklaki-Fagitou-me-Metalliko-Skeleto-Yfasmatino-Kathisma-Dragon-Kingdom-CT4258.html",
+      "skroutz_page_product_id" : 25932991 ,
+      "title" : "Cosatto Noodle 0+ Αναδιπλούμενο Καρεκλάκι Φαγητού με Μεταλλικό Σκελετό & Ύφασμάτινο Κάθισμα Dragon Kingdom",
+      "eshop_product_id" : 11422,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48458186/Renolux-Relax-Morou-2-se-1-RNL051209.html",
+      "skroutz_page_product_id" : 48458186 ,
+      "title" : "RENOLUX Relax Spirit με τη Σόφι την Καμηλοπάρδαλη ΜΑΥΡΟ",
+      "eshop_product_id" : 8163,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/52029350/Renolux-Relax-Morou-Spirit-So-Chic-2-se-1-gia-Paidi-eos-9kg-107543.html",
+      "skroutz_page_product_id" : 52029350 ,
+      "title" : "RENOLUX Relax Spirit So Chic με τη Σόφι την Καμηλοπάρδαλη ΜΠΕΖ",
+      "eshop_product_id" : 8152,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/9933049/Renolux-Ilektriko-Relax-Morou-Sophie-The-Giraffe-Paris-Blue-gia-Paidi-eos-9kg-RNL051665.html",
+      "skroutz_page_product_id" : 9933049 ,
+      "title" : "RENOLUX Relax Spirit So Chic με τη Σόφι την Καμηλοπάρδαλη ΜΠΛΕ",
+      "eshop_product_id" : 8146,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/28281862/Renolux-CHeirokinito-Relax-Morou-Balm-All-Star-Grey-gia-Paidi-eos-9kg-RNL181141.html",
+      "skroutz_page_product_id" : 28281862 ,
+      "title" : "Renolux Χειροκίνητο Relax Μωρού Balm All Star Grey για Παιδί έως 9kg",
+      "eshop_product_id" : 11439,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/32134458/Bo-Jungle-Ilektriko-Relax-Morou-Kounia-B-Portable-Dolphy-Grey-me-Mousiki-gia-Paidi-eos-9kg-B700600.html",
+      "skroutz_page_product_id" : 32134458 ,
+      "title" : "Bo Jungle Ηλεκτρικό Relax Μωρού Κούνια B-Portable Dolphy Grey με Μουσική για Παιδί έως 9kg",
+      "eshop_product_id" : 11433,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/49466227/Moover-Xylino-Karotsi-gia-Koukla-MVT-788885.html",
+      "skroutz_page_product_id" : 49466227 ,
+      "title" : "Moover Ξύλινο Καρότσι για Κούκλα",
+      "eshop_product_id" : 11454,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/46215902/Jabadabado-Perpatoura-gia-18-Minon-S1006.html",
+      "skroutz_page_product_id" : 46215902 ,
+      "title" : "Jabadabado Ξύλινη Περπατούρα Bunny",
+      "eshop_product_id" : 11476,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/46588835/Jabadabado-Beauty-Salon-W7234.html",
+      "skroutz_page_product_id" : 46588835 ,
+      "title" : "Jabadabado Ξύλινο σαλόνι ομορφιάς (Beauty Salon)",
+      "eshop_product_id" : 3480,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/31597094/Jabadabado-Xylini-Paidiki-Kouzina-W7205.html",
+      "skroutz_page_product_id" : 31597094 ,
+      "title" : "Jabadabado Ξύλινη Παιδική Κουζίνα",
+      "eshop_product_id" : 3477,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/44952582/Sophie-La-Girafe-Spondylotos-Trochos-Kinitikon-Dexiotiton-apo-Yfasma-gia-24-Minon-S240129.html",
+      "skroutz_page_product_id" : 44952582 ,
+      "title" : "Σόφι η καμηλοπάρδαλη Πολυμορφικός Τροχό",
+      "eshop_product_id" : 4037,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/12871057/Tommee-Tippee-Paraskeyastis-Galatos-Perfect-Prep-White-42370840.html",
+      "skroutz_page_product_id" : 12871057 ,
+      "title" : "Tommee Tippee Παρασκευαστής Γάλατος Perfect Prep White",
+      "eshop_product_id" : 11815,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22770750/Tommee-Tippee-Antallaktiko-Filtro-Nerou-gia-tin-Syskeyi-Perfect-Prep-42371272.html",
+      "skroutz_page_product_id" : 22770750 ,
+      "title" : "Tommee Tippee Ανταλλακτικό Φίλτρο Νερού για την Συσκευή Perfect Prep",
+      "eshop_product_id" : 11538,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/37866768/Tommee-Tippee-Axesouar-THilasmou-Antallaktiko-Filtro-Nerou-Gia-Tin-Syskeyi-Perfect-Prep-2tmch.html",
+      "skroutz_page_product_id" : 37866768 ,
+      "title" : "Tommee Tippee Αξεσουάρ Θηλασμού Ανταλλακτικό Φίλτρο Νερού Για Την Συσκευή Perfect Prep 2τμχ",
+      "eshop_product_id" : 11546,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40345187/BabyZen-Karotsi-Morou-Yoyo2-Olive-Black-Frame.html",
+      "skroutz_page_product_id" : 40345187 ,
+      "title" : "BabyZen Καρότσι Μωρού Yoyo² Olive 6+ Black Frame",
+      "eshop_product_id" : 11729,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22673091/BabyZen-Yoyo2-Taupe-Black-Frame.html",
+      "skroutz_page_product_id" : 22673091 ,
+      "title" : "BabyZen Yoyo² Taupe 6+ Black Frame",
+      "eshop_product_id" : 11716,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22672681/BabyZen-Yoyo2-Ginger-Black-Frame.html",
+      "skroutz_page_product_id" : 22672681 ,
+      "title" : "BabyZen Yoyo² Ginger 6+ Black Frame",
+      "eshop_product_id" : 11702,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22672990/BabyZen-Yoyo2-Aqua-Blue-Black-Frame.html",
+      "skroutz_page_product_id" : 22672990 ,
+      "title" : "BabyZen Yoyo² Aqua Blue 6+ Black Frame",
+      "eshop_product_id" : 11708,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22673242/BabyZen-Yoyo2-Black-Black-Frame.html",
+      "skroutz_page_product_id" : 22673242 ,
+      "title" : "BabyZen Yoyo² Black 6+ Black Frame",
+      "eshop_product_id" : 11712,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22673408/BabyZen-Yoyo2-Toffee-Black-Frame.html",
+      "skroutz_page_product_id" : 22673408 ,
+      "title" : "BabyZen Yoyo² Toffee 6+ Black Frame",
+      "eshop_product_id" : 11720,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54550518/BabyZen-YOYO2-Karotsi-Morou-Katallilo-gia-Neogennito-Olive-6-2kg-BZ10109-01-BZ10104-15.html",
+      "skroutz_page_product_id" : 54550518 ,
+      "title" : "BabyZen Yoyo² Olive 6+ White Frame",
+      "eshop_product_id" : 11695,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24947116/BabyZen-Yoyo2-Aqua-Blue-White-Frame.html",
+      "skroutz_page_product_id" : 24947116 ,
+      "title" : "BabyZen Yoyo² Aqua Blue 6+ White Frame",
+      "eshop_product_id" : 11663,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24947228/BabyZen-Yoyo2-Ginger-White-Frame.html",
+      "skroutz_page_product_id" : 24947228 ,
+      "title" : "BabyZen Yoyo² Ginger 6+ White Frame",
+      "eshop_product_id" : 11655,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24947162/BabyZen-Yoyo2-Black-White-Frame.html",
+      "skroutz_page_product_id" : 24947162 ,
+      "title" : "BabyZen Yoyo² Black 6+ White Frame",
+      "eshop_product_id" : 11670,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24947370/BabyZen-Yoyo2-Toffee-White-Frame.html",
+      "skroutz_page_product_id" : 24947370 ,
+      "title" : "BabyZen Yoyo² Toffee 6+ White Frame",
+      "eshop_product_id" : 11682,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24947451/BabyZen-Yoyo2-Taupe-White-Frame.html",
+      "skroutz_page_product_id" : 24947451 ,
+      "title" : "BabyZen Yoyo² Taupe 6+ White Frame",
+      "eshop_product_id" : 11676,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24947026/BabyZen-Yoyo2-Air-France-Blue-Black-Frame.html",
+      "skroutz_page_product_id" : 24947026 ,
+      "title" : "BabyZen Yoyo² Air France 6+ Black Frame",
+      "eshop_product_id" : 8046,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24947059/BabyZen-Yoyo2-Air-France-Blue-White-Frame.html",
+      "skroutz_page_product_id" : 24947059 ,
+      "title" : "BabyZen Yoyo² Air France 6+ White Frame",
+      "eshop_product_id" : 8085,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54554907/BabyZen-Yoyo2-Karotsi-Morou-Katallilo-gia-Neogennito-Mayros-Skeletos-Olive-BZ10109-02-BZ10110-15.html",
+      "skroutz_page_product_id" : 54554907 ,
+      "title" : "BabyZen Yoyo² Olive 0+ Black Frame",
+      "eshop_product_id" : 11610,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54555686/BabyZen-YOYO2-Karotsi-Morou-Katallilo-gia-Neogennito-Aspros-Skeletos-Olive-BZ10109-01-BZ10110-15.html",
+      "skroutz_page_product_id" : 54555686 ,
+      "title" : "BabyZen Yoyo² Olive 0+ White Frame",
+      "eshop_product_id" : 11591,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54556620/BabyZen-Yoyo2-Karotsi-2-se-1-Katallilo-gia-Neogennito-Mayros-Skeletos-Olive-BZ10109-02-BZ10227-15.html",
+      "skroutz_page_product_id" : 54556620 ,
+      "title" : "BabyZen Yoyo² Olive Bassinet Black Frame",
+      "eshop_product_id" : 11622,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54555941/BabyZen-Yoyo2-Karotsi-2-se-1-Katallilo-gia-Neogennito-Aspros-Skeletos-Olive-BZ10109-01-BZ10227-15.html",
+      "skroutz_page_product_id" : 54555941 ,
+      "title" : "BabyZen Yoyo² Olive Bassinet White Frame",
+      "eshop_product_id" : 11650,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54556226/BabyZen-Yoyo2-Karotsi-2-se-1-Katallilo-gia-Neogennito-Mayros-Skeletos-Stone-BZ10109-02-BZ10227-14.html",
+      "skroutz_page_product_id" : 54556226 ,
+      "title" : "BabyZen Yoyo² Stone Bassinet Black Frame",
+      "eshop_product_id" : 11634,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54556036/BabyZen-Yoyo2-Karotsi-2-se-1-Katallilo-gia-Neogennito-Aspros-Skeletos-Stone-BZ10109-01-BZ10227-14.html",
+      "skroutz_page_product_id" : 54556036 ,
+      "title" : "BabyZen Yoyo² Stone Bassinet White Frame",
+      "eshop_product_id" : 11646,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25617633/BabyZen-Adiavrocho-Karotsiou-Mayro-Yoyo-BZ10207-01.html",
+      "skroutz_page_product_id" : 25617633 ,
+      "title" : "Babyzen YOYO Κάλυμμα βροχής για σετ 6+ (color pack)",
+      "eshop_product_id" : 5943,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25617862/BabyZen-Yfasma-Karotsiou-Mayro-Yoyo-BZ10203-01.html",
+      "skroutz_page_product_id" : 25617862 ,
+      "title" : "Babyzen YOYO Κουνουπιέρα για σετ νεογέννητου 0+ (newborn pack)",
+      "eshop_product_id" : 5933,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25619096/BabyZen-Potirothiki-Karotsiou-Mayri-Yoyo-BZ10210-01.html",
+      "skroutz_page_product_id" : 25619096 ,
+      "title" : "BabyZen Ποτηροθήκη Καροτσιού Μαύρη Yoyo+",
+      "eshop_product_id" : 5890,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40137712/BabyZen-Tsanta-Metaforas-Karotsiou-Mayri-Yoyo.html",
+      "skroutz_page_product_id" : 40137712 ,
+      "title" : "BabyZen Τσάντα Μεταφοράς Καροτσιού Μαύρη Yoyo",
+      "eshop_product_id" : 5911,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54126238/BabyZen-Kit-Auto-Yoyo.html",
+      "skroutz_page_product_id" : 54126238 ,
+      "title" : "Babyzen YOYO Αντάπτορες Καθίσματος Αυτοκινήτου",
+      "eshop_product_id" : 5901,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25618662/BabyZen-Omprela-Karotsiou-Roz-Yoyo-BZ10214-09.html",
+      "skroutz_page_product_id" : 25618662 ,
+      "title" : "Babyzen YOYO Ομπρέλα καροτσιού GINGER",
+      "eshop_product_id" : 5953,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25837438/BabyZen-Kounoupiera-Karotsiou-Yoyo2-apo-Touli-BZ10224-01-me-Lasticho-Leyki.html",
+      "skroutz_page_product_id" : 25837438 ,
+      "title" : "Babyzen YOYO Κουνουπιέρα για bassinet",
+      "eshop_product_id" : 5922,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29403689/BabyZen-Adiavrocho-Karotsiou-Mayro-Yoyo.html",
+      "skroutz_page_product_id" : 29403689 ,
+      "title" : "Babyzen YOYO Κάλυμμα βροχής για σετ νεογέννητου 0+ (newborn pack)",
+      "eshop_product_id" : 5936,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40054902/BabyZen-Yfasma-Karotsiou-Prasino-Yoyo-595511.html",
+      "skroutz_page_product_id" : 40054902 ,
+      "title" : "Babyzen YOYO 6+ υφάσματα για τη θέση Olive",
+      "eshop_product_id" : 6089,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22789630/BabyZen-Kounoupiera-Karotsiou-Yoyo2-apo-Touli-BZ10204-01-me-Lasticho-Gri.html",
+      "skroutz_page_product_id" : 22789630 ,
+      "title" : "Babyzen YOYO Κουνουπιέρα για σετ 6+ (color pack)",
+      "eshop_product_id" : 5941,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40137756/BabyZen-Buggy-Board-Karotsiou-Mayro-Yoyo.html",
+      "skroutz_page_product_id" : 40137756 ,
+      "title" : "Babyzen YOYO board-σανίδα με θέση για μεγαλύτερο παιδάκι",
+      "eshop_product_id" : 6029,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40727638/BabyZen-Omprela-Karotsiou-Mpez-Yoyo-595904.html",
+      "skroutz_page_product_id" : 40727638 ,
+      "title" : "Babyzen YOYO Ομπρέλα καροτσιού TAUPE",
+      "eshop_product_id" : 5969,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54364249/BabyZen-Omprela-Karotsiou-Gri-Yoyo-595910.html",
+      "skroutz_page_product_id" : 54364249 ,
+      "title" : "Babyzen YOYO Ομπρέλα καροτσιού Stone",
+      "eshop_product_id" : 5963,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22221179/BabyZen-Yfasma-Karotsiou-Mayro-Yoyo-BZ10104-09.html",
+      "skroutz_page_product_id" : 22221179 ,
+      "title" : "Babyzen YOYO 6+ υφάσματα για τη θέση Ginger",
+      "eshop_product_id" : 6083,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/37373579/BabyZen-Kit-Metatropis-Karotsiou-Mayro-Antaptores-596501.html",
+      "skroutz_page_product_id" : 37373579 ,
+      "title" : "Babyzen YOYO connect Αντάπτορες για bassinet",
+      "eshop_product_id" : 6017,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54133715/Babyzen-Yoyo-Tsanta-Stone.html",
+      "skroutz_page_product_id" : 54133715 ,
+      "title" : "Babyzen YOYO Τσάντα STONE",
+      "eshop_product_id" : 6010,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25618109/BabyZen-Yfasma-Karotsiou-Mple-Yoyo-BZ10108-11.html",
+      "skroutz_page_product_id" : 25618109 ,
+      "title" : "Babyzen YOYO 6+ υφάσματα για τη θέση Air France Blue",
+      "eshop_product_id" : 6045,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22221155/BabyZen-Yfasma-Karotsiou-Mple-Yoyo-BZ10104-13.html",
+      "skroutz_page_product_id" : 22221155 ,
+      "title" : "Babyzen YOYO 6+ υφάσματα για τη θέση Aqua",
+      "eshop_product_id" : 6066,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/19534536/BabyZen-Yfasma-Karotsiou-Mayro-Yoyo-BZ10104-05.html",
+      "skroutz_page_product_id" : 19534536 ,
+      "title" : "Babyzen YOYO 6+ υφάσματα για τη θέση Μαύρο",
+      "eshop_product_id" : 6076,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25618716/BabyZen-Yoyo-Podosakos-Karotsiou-Mayros-100x42ek-BZ10209-05.html",
+      "skroutz_page_product_id" : 25618716 ,
+      "title" : "Babyzen YOYO Ποδόσακος (footmuff) ΜΑΥΡΟ",
+      "eshop_product_id" : 6110,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25619040/BabyZen-Yoyo-Podosakos-Karotsiou-Ginger-100x42ek-BZ10209-09.html",
+      "skroutz_page_product_id" : 25619040 ,
+      "title" : "Babyzen YOYO Ποδόσακος (footmuff) GINGER",
+      "eshop_product_id" : 6117,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42128707/BabyZen-Yoyo-Podosakos-Karotsiou-Gri-596010.html",
+      "skroutz_page_product_id" : 42128707 ,
+      "title" : "Babyzen YOYO Ποδόσακος (footmuff) STONE",
+      "eshop_product_id" : 6124,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/25619028/BabyZen-Yoyo-Podosakos-Karotsiou-Taupe-100x42ek-BZ10209-06.html",
+      "skroutz_page_product_id" : 25619028 ,
+      "title" : "Babyzen YOYO Ποδόσακος (footmuff) TAUPE",
+      "eshop_product_id" : 6132,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40973342/BabyZen-Skeletos-Karotsiou-Leykos-Yoyo2-595101.html",
+      "skroutz_page_product_id" : 40973342 ,
+      "title" : "Babyzen YOYO² Σκελετός Καροτσιού ΑΣΠΡΟ",
+      "eshop_product_id" : 6332,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40973457/BabyZen-Skeletos-Karotsiou-Mayros-Yoyo2-595102.html",
+      "skroutz_page_product_id" : 40973457 ,
+      "title" : "Babyzen YOYO² Σκελετός Καροτσιού ΜΑΥΡΟ",
+      "eshop_product_id" : 6323,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40711203/BabyZen-Yfasma-Karotsiou-Prasino-Yoyo2-595311.html",
+      "skroutz_page_product_id" : 40711203 ,
+      "title" : "Babyzen YOYO Σετ για νεογέννητο 0+ OLIVE",
+      "eshop_product_id" : 6340,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29403851/BabyZen-Axesouar-Karotsiou-Leyko-Yoyo.html",
+      "skroutz_page_product_id" : 29403851 ,
+      "title" : "Babyzen YOYO Handlebar (Λαβή-Τιμόνι) ΑΣΠΡΟ",
+      "eshop_product_id" : 6360,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29403919/BabyZen-Axesouar-Karotsiou-Mayro-Wheel-Pack-YoYo-2.html",
+      "skroutz_page_product_id" : 29403919 ,
+      "title" : "Babyzen YOYO Σετ ρόδες (wheels pack)",
+      "eshop_product_id" : 6363,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/36536817/BabyZen-Axesouar-Karotsiou-Mayro-Yoyo-Pedila-Ski-597101.html",
+      "skroutz_page_product_id" : 36536817 ,
+      "title" : "Babyzen YOYO Πέδιλα Σκι",
+      "eshop_product_id" : 6366,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54187871/BabyZen-Port-Bebe-Yoyo.html",
+      "skroutz_page_product_id" : 54187871 ,
+      "title" : "Babyzen YOYO bassinet (πορτ-μπεμπέ) STONE",
+      "eshop_product_id" : 6409,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/41184577/BabyZen-Port-Bebe-Yoyo-Olive-595411.html",
+      "skroutz_page_product_id" : 41184577 ,
+      "title" : "Babyzen YOYO bassinet (πορτ-μπεμπέ) OLIVE",
+      "eshop_product_id" : 6423,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40252149/BabyZen-Vasi-gia-Kathisma-Mayri-me-Isofix-Yoyo-Besafe-BZ595701.html",
+      "skroutz_page_product_id" : 40252149 ,
+      "title" : "Babyzen YOYO Βάση ISOfix Καθίσματος αυτοκινήτου by BeSafe",
+      "eshop_product_id" : 6529,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21625814/BeSafe-Kathismataki-Aytokinitou-iZi-Go-Modular-X1-i-Size-0-13-kg-Fresh-Black-Cab.html",
+      "skroutz_page_product_id" : 21625814 ,
+      "title" : "Babyzen YOYO Κάθισμα αυτοκινήτου by BeSafe (0-12 μηνών)",
+      "eshop_product_id" : 6519,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29476719/BabyZen-Yfasma-Karotsiou-Kafe-Yoyo2.html",
+      "skroutz_page_product_id" : 29476719 ,
+      "title" : "Babyzen YOYO 6+ υφάσματα για τη θέση Toffee",
+      "eshop_product_id" : 6105,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42672532/BabyZen-Yfasma-Karotsiou-Mpez-Yoyo-595504.html",
+      "skroutz_page_product_id" : 42672532 ,
+      "title" : "Babyzen YOYO 6+ υφάσματα για τη θέση Taupe",
+      "eshop_product_id" : 6100,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40251857/BabyZen-Tsanta-Karotsiou-Prasini-Yoyo-BZ595811.html",
+      "skroutz_page_product_id" : 40251857 ,
+      "title" : "Babyzen YOYO Τσάντα OLIVE",
+      "eshop_product_id" : 6004,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/18349580/Stokke-Paidiko-Kathismataki-Mpaniou-Flexi-Bath-White-542800.html",
+      "skroutz_page_product_id" : 18349580 ,
+      "title" : "Stokke Παιδικό Καθισματάκι Μπάνιου Flexi Bath White",
+      "eshop_product_id" : 6023,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48203223/Stokke-Mpaniera-Morou-Flexi-Bath-Leyki-531905.html",
+      "skroutz_page_product_id" : 48203223 ,
+      "title" : "Stokke Flexi Bath Μπανάκι WHITE ΑQUA",
+      "eshop_product_id" : 6252,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/45572423/Stokke-Flexi-Bath-Leyko-639601.html",
+      "skroutz_page_product_id" : 45572423 ,
+      "title" : "Stokke Flexi Bath X-Large Bundle Μπανάκι με βάση στήριξης νεογέννητου ΑΣΠΡΟ",
+      "eshop_product_id" : 6246,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48580710/Stokke-Ptyssomeni-Mpaniera-Morou-Flexi-Leyki-535905.html",
+      "skroutz_page_product_id" : 48580710 ,
+      "title" : "Stokke Flexi Bath X-Large Μπανάκι Mickey celebration",
+      "eshop_product_id" : 6223,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/20710373/Stokke-Mpaniera-Morou-White-535901.html",
+      "skroutz_page_product_id" : 20710373 ,
+      "title" : "Stokke Flexi Bath X-Large Μπανάκι ΑΣΠΡΟ",
+      "eshop_product_id" : 6258,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/20227109/Stokke-Mpaniera-Morou-Blue-535902.html",
+      "skroutz_page_product_id" : 20227109 ,
+      "title" : "Stokke Flexi Bath X-Large Μπανάκι ΔΙΑΦΑΝΟ-ΜΠΛΕ (transparent blue)",
+      "eshop_product_id" : 6399,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/35083048/Stokke-Mpaniera-Morou-Flexi-Bath-Green-531910.html",
+      "skroutz_page_product_id" : 35083048 ,
+      "title" : "Stokke Flexi Bath Μπανάκι ΔΙΑΦΑΝΟ-ΠΡΑΣΙΝΟ (transparent green)",
+      "eshop_product_id" : 6383,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/47199253/Stokke-Mpaniera-Morou-Flexi-Bath-Leyki-531911.html",
+      "skroutz_page_product_id" : 47199253 ,
+      "title" : "Stokke Flexi Bath Μπανάκι Mickey Celebration",
+      "eshop_product_id" : 6374,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/35082958/Stokke-Mpaniera-Morou-Flexi-Bath-Green-531508.html",
+      "skroutz_page_product_id" : 35082958 ,
+      "title" : "Stokke Flexi Bath Bundle Μπανάκι με βάση στήριξης νεογέννητου ΔΙΑΦΑΝΟ-ΠΡΑΣΙΝΟ (transparent green)",
+      "eshop_product_id" : 6446,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/45572433/Stokke-Flexi-Bath-Prasino-639604.html",
+      "skroutz_page_product_id" : 45572433 ,
+      "title" : "Stokke Flexi Bath X-Large Bundle Μπανάκι με βάση στήριξης νεογέννητου ΔΙΑΦΑΝΟ-ΠΡΑΣΙΝΟ (transparent green)",
+      "eshop_product_id" : 6470,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/16961423/Stokke-Mpaniera-Morou-Flexi-Bath-Blue-531504.html",
+      "skroutz_page_product_id" : 16961423 ,
+      "title" : "Stokke Flexi Bath Bundle Μπανάκι με βάση στήριξης νεογέννητου ΔΙΑΦΑΝΟ-ΜΠΛΕ (transparent blue)",
+      "eshop_product_id" : 6454,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/45572432/Stokke-Flexi-Bath-Mple-639602.html",
+      "skroutz_page_product_id" : 45572432 ,
+      "title" : "Stokke Flexi Bath X-Large Bundle Μπανάκι με βάση στήριξης νεογέννητου ΔΙΑΦΑΝΟ-ΜΠΛΕ (transparent blue)",
+      "eshop_product_id" : 6462,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48203222/Stokke-Mpaniera-Morou-Flexi-Bath-Mple-531904.html",
+      "skroutz_page_product_id" : 48203222 ,
+      "title" : "Stokke Flexi Bath Μπανάκι ΔΙΑΦΑΝΟ-ΜΠΛΕ (transparent blue)",
+      "eshop_product_id" : 6209,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/23927874/Stokke-Diskos-gia-Kareklaki-Fagitou-Tripp-Trapp-Black-428502.html",
+      "skroutz_page_product_id" : 23927874 ,
+      "title" : "Stokke Tripp Trapp Δίσκος φαγητού ΜΑΥΡΟ",
+      "eshop_product_id" : 5803,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/23923723/Stokke-Axesouar-gia-Kathismataki-Fagitou-Tripp-Trapp-White-549801.html",
+      "skroutz_page_product_id" : 23923723 ,
+      "title" : "Stokke Θήκη Αποθήκευσης για καρέκλα Tripp Trapp",
+      "eshop_product_id" : 5782,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29160353/Stokke-Kalymma-gia-Kareklaki-Fagitou-Tripp-Trapp-Stars-Multi-100372.html",
+      "skroutz_page_product_id" : 29160353 ,
+      "title" : "Stokke Tripp Trapp Μαξιλάρι stars multi",
+      "eshop_product_id" : 5816,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/27016527/Stokke-Kalymma-gia-Kareklaki-Fagitou-Tripp-Trapp-Nordic-Grey-496007.html",
+      "skroutz_page_product_id" : 27016527 ,
+      "title" : "Stokke Tripp Trapp Βρεφικό Μαξιλάρι nordic grey",
+      "eshop_product_id" : 5813,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/45575906/Stokke-Tripp-Trapp-se-CHroma-619007.html",
+      "skroutz_page_product_id" : 45575906 ,
+      "title" : "Stokke Tripp Trapp Μαξιλάρι mickey signature",
+      "eshop_product_id" : 5845,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/27016454/Stokke-Kalymma-gia-Kareklaki-Fagitou-Tripp-Trapp-Nordic-Grey-100366.html",
+      "skroutz_page_product_id" : 27016454 ,
+      "title" : "Stokke Tripp Trapp Μαξιλάρι nordic grey",
+      "eshop_product_id" : 5829,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29131494/Stokke-Kalymma-gia-Kareklaki-Fagitou-Tripp-Trapp-Star-Silver-100370.html",
+      "skroutz_page_product_id" : 29131494 ,
+      "title" : "Stokke Tripp Trapp Μαξιλάρι star silver",
+      "eshop_product_id" : 5874,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42501494/Stokke-Kalymma-gia-Kareklaki-Fagitou-Tripp-Trapp-Icon-Soul-System-100380.html",
+      "skroutz_page_product_id" : 42501494 ,
+      "title" : "Stokke Tripp Trapp Μαξιλάρι wheat cream",
+      "eshop_product_id" : 5860,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/50710670/Stokke-Vrefiko-Axesouar-Tripp-Trapp-se-Prasino-CHroma-159331.html",
+      "skroutz_page_product_id" : 50710670 ,
+      "title" : "Stokke Tripp Trapp Βρεφικό σετ (baby set) GLACIER GREEN",
+      "eshop_product_id" : 6139,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21972261/Stokke-Tripp-Trapp-Kareklaki-Fagitou-me-Xylino-Skeleto-Xylino-Kathisma-Gri-100125.html",
+      "skroutz_page_product_id" : 21972261 ,
+      "title" : "Stokke Tripp Trapp Καρέκλα STORM GREY",
+      "eshop_product_id" : 6284,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/23927904/Stokke-Kathisma-gia-Kareklaki-Fagitou-Tripp-Trapp-Storm-Grey-159317.html",
+      "skroutz_page_product_id" : 23927904 ,
+      "title" : "Stokke Tripp Trapp Βρεφικό σετ (baby set) STORM GREY",
+      "eshop_product_id" : 6281,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/26347989/Dr-Brown-s-Ilektriko-Aplo-THilastro-Mpatarias-kai-Reymatos-BF103.html",
+      "skroutz_page_product_id" : 26347989 ,
+      "title" : "Dr.Brown's Θήλαστρο Ηλεκτρικό Μονής Άντλησης",
+      "eshop_product_id" : 5127,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/27836738/Dr-Brown-s-Mpol-Fagitou-me-Ventouza-2tmch-TF019.html",
+      "skroutz_page_product_id" : 27836738 ,
+      "title" : "Dr.Brown's Μπολ Φαγητού Αντιολισθητικό με Βεντούζα 4m+ (2τμχ)",
+      "eshop_product_id" : 5005,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/20871954/Dr-Brown-s-Gyalino-Mpimpero-Options-Wide-Neck-Kata-ton-Kolikon-me-THili-Silikonis-150ml-gia-0-minon-WB51700.html",
+      "skroutz_page_product_id" : 20871954 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Γυάλινο με Φαρδύ Λαιμό 150ml και θηλή σιλικόνης 0+",
+      "eshop_product_id" : 4804,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/20871983/Dr-Brown-s-Gyalino-Mpimpero-Options-Wide-Neck-Kata-ton-Kolikon-me-THili-Silikonis-270ml-gia-0-minon-WB91700.html",
+      "skroutz_page_product_id" : 20871983 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Γυάλινο με Φαρδύ Λαιμό 270ml και θηλή σιλικόνης 0+",
+      "eshop_product_id" : 4806,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/45126696/Dr-Brown-s-Set-Plastika-Mpimpero-Options-Kata-ton-Kolikon-me-THili-Silikonis-270ml-gia-0-minon-2tmch-WB02600.html",
+      "skroutz_page_product_id" : 45126696 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Πλαστικά με Φαρδύ Λαιμό 150+270ml και θηλές σιλικόνης 0+,3+μηνών",
+      "eshop_product_id" : 4818,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/35180622/Dr-Brown-s-Set-Plastika-Mpimpero-Options-Baby-Bottle-Starter-Kit-Kata-ton-Kolikon-me-THili-Silikonis-270ml-gia-0-minon-12tmch.html",
+      "skroutz_page_product_id" : 35180622 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Πλαστικά με Φαρδύ Λαιμό 2x270ml & 1x150ml και θηλές σιλικόνης 0+,3+,6+μηνών",
+      "eshop_product_id" : 4828,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/38233072/Dr-Brown-s-Plastiko-Mpimpero-Options-Wide-Neck-Kata-ton-Kolikon-me-THili-Silikonis-270ml-gia-0-minon-WB91802.html",
+      "skroutz_page_product_id" : 38233072 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Πλαστικό με Φαρδύ Λαιμό 270ml και θηλή σιλικόνης 0+, ΜΠΛΕ",
+      "eshop_product_id" : 4840,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/38233056/Dr-Brown-s-Plastiko-Mpimpero-Options-Wide-Neck-Kata-ton-Kolikon-me-THili-Silikonis-270ml-gia-0-minon-Dentrakia-WB91806.html",
+      "skroutz_page_product_id" : 38233056 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Πλαστικό με Φαρδύ Λαιμό 270ml και θηλή σιλικόνης 0+,ΠΡΑΣΙΝΟ",
+      "eshop_product_id" : 4847,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/10388438/Dr-Brown-s-Set-Peripoiisis-Morou-HG029-4tmch.html",
+      "skroutz_page_product_id" : 10388438 ,
+      "title" : "Dr.Brown's Σετ βρεφικής περιποίησης (Βούρτσα, Χτένα, Ψαλιδάκι, Ρινικός Αποφρακτήρας)",
+      "eshop_product_id" : 4869,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/38282218/Dr-Brown-s-Plastiko-Mpimpero-Options-Kata-ton-Kolikon-me-THili-Silikonis-330ml-gia-3-minon-Aerostato-WB111002.html",
+      "skroutz_page_product_id" : 38282218 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Πλαστικό με Φαρδύ Λαιμό 330ml και θηλή σιλικόνης 3+, ΑΕΡΟΣΤΑΤΟ",
+      "eshop_product_id" : 4850,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/38282274/Dr-Brown-s-Plastiko-Mpimpero-Options-Kata-ton-Kolikon-me-THili-Silikonis-330ml-gia-3-minon-SkiourosWB111001.html",
+      "skroutz_page_product_id" : 38282274 ,
+      "title" : "Dr.Brown's Options+ Anti-colic Μπιμπερό Πλαστικό με Φαρδύ Λαιμό 330ml και θηλή σιλικόνης 3+, ΑΕΡΟΠΛΑΝΟ",
+      "eshop_product_id" : 4853,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/13461966/Dr-Brown-s-Vrefiki-Odontovourtsa-Dachtylou-HG010-Transparent-gia-3m.html",
+      "skroutz_page_product_id" : 13461966 ,
+      "title" : "Dr.Brown's Βρεφική δακτυλική οδοντόβουρτσα σιλικόνης",
+      "eshop_product_id" : 4873,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/8477424/Dr-Brown-s-Vrefiki-Odontovourtsa-Elefantaki-Roz-gia-0m.html",
+      "skroutz_page_product_id" : 8477424 ,
+      "title" : "Dr.Brown's Βρεφική-παιδική οδοντόβουρτσα ελεφαντάκι ΡΟΖ",
+      "eshop_product_id" : 4878,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/8477421/Dr-Brown-s-Vrefiki-Odontovourtsa-Elefantaki-Mple-gia-0m.html",
+      "skroutz_page_product_id" : 8477421 ,
+      "title" : "Dr.Brown's Βρεφική-παιδική οδοντόβουρτσα ελεφαντάκι ΜΠΛΕ",
+      "eshop_product_id" : 4882,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/7788718/Dr-Brown-s-Dosometritis-Galaktos-se-Skoni-gia-Mpimpero-me-3-Epipeda-Mple-AC039.html",
+      "skroutz_page_product_id" : 7788718 ,
+      "title" : "Dr.Brown's Δοσομετρητής σκόνης γάλακτος ΜΠΛΕ",
+      "eshop_product_id" : 4889,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/7788740/Dr-Brown-s-Dosometritis-Galaktos-se-Skoni-gia-Mpimpero-me-3-Epipeda-Roz-AC-038.html",
+      "skroutz_page_product_id" : 7788740 ,
+      "title" : "Dr.Brown's Δοσομετρητής σκόνης γάλακτος ΡΟΖ",
+      "eshop_product_id" : 4886,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21335931/Dr-Brown-s-Solinas-Rois-gia-Mpimpero-Prasinos-WR201-2tmch.html",
+      "skroutz_page_product_id" : 21335931 ,
+      "title" : "Dr. Brown's Σωλήνας Ροής για Μπιμπερό Πράσινος 2τμχ",
+      "eshop_product_id" : 4859,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42336378/Dr-Brown-s-Pipila-Silikonis-gia-0-6-minon-Mple-Mat.html",
+      "skroutz_page_product_id" : 42336378 ,
+      "title" : "Dr.Brown's Πιπίλα όλο Σιλικόνη Happy Paci 0+μηνών ΣΙΕΛ",
+      "eshop_product_id" : 4925,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40385100/Dr-Brown-s-Pipila-Silikonis-gia-0-6-minon-Happy-Paci-PS110074-Pastel-Pink.html",
+      "skroutz_page_product_id" : 40385100 ,
+      "title" : "Dr.Brown's Πιπίλα όλο Σιλικόνη Happy Paci 0+μηνών ΡΟΖ",
+      "eshop_product_id" : 4921,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21007970/Dr-Brown-s-Pipiles-Silikonis-gia-0-6-minon-PA12004-me-THiki-Nyktos-Bear-Blue-2tmch.html",
+      "skroutz_page_product_id" : 21007970 ,
+      "title" : "Dr.Brown's Advantage Πιπίλες Σιλικόνης Νυκτός Bear Blue 0-6μηνών (2τμχ)",
+      "eshop_product_id" : 4942,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/16892680/Dr-Brown-s-Pipiles-Silikonis-PA12001-Pink-Grey-me-THiki-gia-0-6-minon-2tmch.html",
+      "skroutz_page_product_id" : 16892680 ,
+      "title" : "Dr.Brown's Advantage Πιπίλες Σιλικόνης Ροζ/Γκρι 0-6μηνών (2τμχ)",
+      "eshop_product_id" : 4929,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/16892679/Dr-Brown-s-Pipiles-Silikonis-PA22001-Pink-Veraman-me-THiki-gia-6-18-minon-2tmch.html",
+      "skroutz_page_product_id" : 16892679 ,
+      "title" : "Dr.Brown's Advantage Πιπίλες Σιλικόνης Ροζ/Πράσινο 6-18μηνών (2τμχ)",
+      "eshop_product_id" : 4948,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/16892678/Dr-Brown-s-Pipiles-Silikonis-PA22002-Mple-Prasino-me-THiki-gia-6-18-minon-2tmch.html",
+      "skroutz_page_product_id" : 16892678 ,
+      "title" : "Dr.Brown's Advantage Πιπίλες Σιλικόνης Μπλε/Πράσινο 6-18μηνών (2τμχ)",
+      "eshop_product_id" : 4952,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/38315362/Dr-Brown-s-Orthodontikes-Pipiles-Silikonis-gia-6-18-minon-PV22007-Nyktos-Deinosayros-Roz-2tmch.html",
+      "skroutz_page_product_id" : 38315362 ,
+      "title" : "Dr.Brown's Prevent Πιπίλες Ορθοδοντικές Σιλικόνης Νυκτός Δεινόσαυρος/Πλανήτης 6-18μηνών (2τμχ)",
+      "eshop_product_id" : 4992,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21007948/Dr-Brown-s-Pipiles-Silikonis-Nyktos-PA22004-gia-6-18-minon-me-THiki-Astronaut-Mple-Gri-2tmch.html",
+      "skroutz_page_product_id" : 21007948 ,
+      "title" : "Dr.Brown's Advantage Πιπίλες Σιλικόνης Νυκτός Αστροναύτης/Πλανήτης 6-18μηνών (2τμχ)",
+      "eshop_product_id" : 4955,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/36270979/Dr-Brown-s-Orthodontikes-Pipiles-Silikonis-gia-0-6-minon-PreVent-PV12402-me-THiki-Petalouda-Leyko-2tmch.html",
+      "skroutz_page_product_id" : 36270979 ,
+      "title" : "Dr.Brown's Prevent Πιπίλες Ορθοδοντικές Σιλικόνης Λαγουδάκι/Μελισσούλες 0-6μηνών (2τμχ)",
+      "eshop_product_id" : 4971,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54638818/Dr-Brown-s-Pipiles-Silikonis-Kyknos-Roz-Diafano-gia-0-6-minon-2tmch.html",
+      "skroutz_page_product_id" : 54638818 ,
+      "title" : "Dr.Brown's Prevent Πιπίλες Ορθοδοντικές Σιλικόνης Νυκτός Κύκνος/Λιβελούλα 0-6μηνών (2τμχ)",
+      "eshop_product_id" : 4975,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/38315325/Dr-Brown-s-Orthodontikes-Pipiles-Silikonis-Nyktos-PV12008-gia-0-6-minon-Koukouvagia-Liveloula-Mple-2tmch.html",
+      "skroutz_page_product_id" : 38315325 ,
+      "title" : "Dr.Brown's Prevent Πιπίλες Ορθοδοντικές Σιλικόνης Νυκτός Κουκουβάγια/Λιβελούλα 0-6μηνών (2τμχ)",
+      "eshop_product_id" : 4979,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/36533412/Dr-Brown-s-Orthodontikes-Pipiles-Silikonis-PV22402-Deinosayros-Lemonia-Prasino-gia-6-18-minon-2tmch.html",
+      "skroutz_page_product_id" : 36533412 ,
+      "title" : "Dr.Brown's Prevent Πιπίλες Ορθοδοντικές Σιλικόνης Δεινόσαυρος/Λεμόνια 6-18μηνών (2τμχ)",
+      "eshop_product_id" : 4988,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/34987696/Dr-Brown-s-Paidiko-Potiraki-Miracle-360-apo-Plastiko-Roz-200ml-gia-6m-TC71005.html",
+      "skroutz_page_product_id" : 34987696 ,
+      "title" : "Dr.Brown's Κύπελλο 360° με λαβές 200ml 6+μηνών ΡΟΖ",
+      "eshop_product_id" : 5027,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/19588030/Dr-Brown-s-Vrefiko-Set-me-Koutalia-apo-Plastiko-Kitrino-Prasino-gia-4-minon-2tmch-TF011.html",
+      "skroutz_page_product_id" : 19588030 ,
+      "title" : "Dr.Brown's Κουταλάκια ταΐσματος μαλακά 4+μηνών (2τμχ)",
+      "eshop_product_id" : 5009,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/19588072/Dr-Brown-s-Vrefiko-Set-me-Koutalia-apo-Plastiko-Polychroma-gia-4-minon-4tmch-TF009.html",
+      "skroutz_page_product_id" : 19588072 ,
+      "title" : "Dr.Brown's Κουταλάκια ταΐσματος μαλακά 4+μηνών (4τμχ)",
+      "eshop_product_id" : 5014,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42470769/Dr-Brown-s-Paidiko-Potiraki-me-Laves-kai-Kalamaki-Duck-apo-Plastiko-Roz-270ml-gia-6m-TC91011.html",
+      "skroutz_page_product_id" : 42470769 ,
+      "title" : "Dr.Brown's Κύπελλο με εύπλαστο καλαμάκι 270ml 6+μηνών ΡΟΖ",
+      "eshop_product_id" : 5036,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/34987791/Dr-Brown-s-Paidiko-Potiraki-Miracle-360-apo-Plastiko-Mple-200ml-gia-6m-TC71006.html",
+      "skroutz_page_product_id" : 34987791 ,
+      "title" : "Dr.Brown's Κύπελλο 360° με λαβές 200ml 6+μηνών ΜΠΛΕ",
+      "eshop_product_id" : 5031,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/28230377/Dr-Brown-s-AC197-Filtro-HEPA-gia-Afygrantira.html",
+      "skroutz_page_product_id" : 28230377 ,
+      "title" : "DR.Brown's Ανταλλακτικό Φίλτρο Αέρα HEPA Ηλεκτρικού Αποστειρωτή και Στεγνωτήρα",
+      "eshop_product_id" : 5090,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/27896491/Dr-Brown-s-Paidiko-Potiraki-me-Laves-kai-Kalamaki-apo-Plastiko-Roz-300ml-gia-12m-TC01201.html",
+      "skroutz_page_product_id" : 27896491 ,
+      "title" : "Dr.Brown's Κύπελλο Θερμός με Καλαμάκι 300ml 12+μηνών ΡΟΖ",
+      "eshop_product_id" : 5055,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42470538/Dr-Brown-s-Paidiko-Potiraki-me-Laves-kai-Kalamaki-Fox-apo-Plastiko-Mple-270ml-gia-6m-TC-91012-INTL.html",
+      "skroutz_page_product_id" : 42470538 ,
+      "title" : "Dr.Brown's Κύπελλο με εύπλαστο καλαμάκι 270ml 6+μηνών ΜΠΛΕ",
+      "eshop_product_id" : 5040,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29072890/Dr-Brown-s-Soft-Spout-Transition-Cup-Ekpaideytiko-Mpimpero-Plastiko-me-Laves-Asterakia-Mple-gia-6m-180ml-TC-61001.html",
+      "skroutz_page_product_id" : 29072890 ,
+      "title" : "Dr.Brown's Κύπελλο Εκπαίδευσης με Μαλακό Στόμιο 180ml 6+μηνών ΜΠΛΕ",
+      "eshop_product_id" : 5045,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48534088/Dr-Brown-s-Ekpaideytiko-Mpimpero-Plastiko-me-Laves-Roz-Oyranio-Toxo-gia-6m-180ml.html",
+      "skroutz_page_product_id" : 48534088 ,
+      "title" : "Dr.Brown's Κύπελλο Εκπαίδευσης με Μαλακό Στόμιο 180ml 6+μηνών ΡΟΖ",
+      "eshop_product_id" : 5049,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/27896748/Dr-Brown-s-Paidiko-Potiraki-me-Laves-kai-Kalamaki-apo-Plastiko-Mple-300ml-gia-12m-TC01202.html",
+      "skroutz_page_product_id" : 27896748 ,
+      "title" : "Dr.Brown's Κύπελλο Θερμός με Καλαμάκι 300ml 12+μηνών ΜΠΛΕ",
+      "eshop_product_id" : 5062,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48414372/Sophie-La-Girafe-Paidiko-Set-Eau-Fraiche-50ml-PSG5351-me-me-Keramiko-Stolidi.html",
+      "skroutz_page_product_id" : 48414372 ,
+      "title" : "Σόφι η καμηλοπάρδαλη Σετ δώρου Άρωμα με νότες πορτοκαλιού και βανίλιας (50ml) με κεραμικό στολίδι",
+      "eshop_product_id" : 11512,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/24420260/Sophie-La-Girafe-Masitiko-Odontofyias-apo-Kaoutsouk-gia-3-m-S616401.html",
+      "skroutz_page_product_id" : 24420260 ,
+      "title" : "Σόφι η καμηλοπάρδαλη το πρώτο παιχνίδι του μωρού που διεγείρει όλες του τις αισθήσεις, με θήκη αποθήκευσης",
+      "eshop_product_id" : 4107,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/55722039/Grobag-CHeimerinos-Ypnosakos-2-5-tog-Grey-Marl-491536.html",
+      "skroutz_page_product_id" : 55722039 ,
+      "title" : "Grobag Χειμερινός Υπνόσακος 2.5 tog Grey Marl",
+      "eshop_product_id" : 12809,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/12449203/Dr-Brown-s-Vrefiki-Isothermiki-Tsanta-Anoxeidoto-Polka-Dot.html",
+      "skroutz_page_product_id" : 12449203 ,
+      "title" : "Dr. Brown's Βρεφική Ισοθερμική Τσάντα Ανοξείδωτο Polka Dot",
+      "eshop_product_id" : 12803,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/38315669/Dr-Brown-s-Vrefiki-Isothermiki-Tsanta-Scandinavian-AC226.html",
+      "skroutz_page_product_id" : 38315669 ,
+      "title" : "Dr. Brown's Βρεφική Ισοθερμική Τσάντα Scandinavian",
+      "eshop_product_id" : 12789,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/53145222/Dr-Brown-s-Plastiko-Mpimpero-Kata-ton-Kolikon-me-THili-Silikonis-gia-0-minon-270ml.html",
+      "skroutz_page_product_id" : 53145222 ,
+      "title" : "Dr. Brown's Πλαστικό Μπιμπερό Κατά των Κολικών με Θηλή Σιλικόνης για 0+ μηνών 270ml Δεινόσαυροι",
+      "eshop_product_id" : 12787,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54125375/Dr-Brown-s-Plastiko-Mpimpero-Kata-ton-Kolikon-me-THili-Silikonis-270ml-WB91009.html",
+      "skroutz_page_product_id" : 54125375 ,
+      "title" : "Dr. Brown's Πλαστικό Μπιμπερό Κατά των Κολικών με Θηλή Σιλικόνης 270ml Φάλαινα",
+      "eshop_product_id" : 12780,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40915532/Fresk-Crocodile-Isothermiki-THiki-Fagitou-Prasini-FR-FB970-30.html",
+      "skroutz_page_product_id" : 40915532 ,
+      "title" : "Fresk Crocodile Ισοθερμική Θήκη Φαγητού 24x15",
+      "eshop_product_id" : 12719,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40915516/Fresk-Dino-Isothermiki-THiki-Fagitou-Mple-Deinosayroi-FR-FB970-10.html",
+      "skroutz_page_product_id" : 40915516 ,
+      "title" : "Fresk Dino Ισοθερμική Θήκη Φαγητού 24x15",
+      "eshop_product_id" : 12716,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/23781951/Bo-Jungle-Gymnastirio-Drastiriotiton-Apple-Gri-gia-Neogennita-B910600.html",
+      "skroutz_page_product_id" : 23781951 ,
+      "title" : "Bo Jungle Γυμναστήριο Δραστηριοτήτων Apple Γκρι για Νεογέννητα",
+      "eshop_product_id" : 12694,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/13755214/Bo-Jungle-Ilektriko-Relax-Morou-Rocker-Grey-me-Mousiki-kai-Donisi-gia-Paidi-eos-18kg-B700100.html",
+      "skroutz_page_product_id" : 13755214 ,
+      "title" : "Bo Jungle Ηλεκτρικό Relax Μωρού Rocker Grey με Μουσική και Δόνηση για Παιδί έως 18kg",
+      "eshop_product_id" : 12431,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42535961/Bo-Jungle-Paidiko-Kathisma-Toualetas-me-Eykampti-Epifaneia-Galazio-B411440.html",
+      "skroutz_page_product_id" : 42535961 ,
+      "title" : "Bo Jungle Παιδικό Κάθισμα Τουαλέτας με Εύκαμπτη Επιφάνεια Γαλάζιο",
+      "eshop_product_id" : 12152,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/53929893/Bo-Jungle-Klasiko-Gio-Gio-me-Kapaki-Gri.html",
+      "skroutz_page_product_id" : 53929893 ,
+      "title" : "Bo Jungle Γιο Γιο Λαγουδάκι με Καπάκι Γκρι",
+      "eshop_product_id" : 4367,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/45067648/Sophie-La-Girafe-Kasetina-Varelaki-me-1-THiki-1tmch-S010412.html",
+      "skroutz_page_product_id" : 45067648 ,
+      "title" : "Sophie La Girafe Βαρελάκι Δραστηριοτήτων 1τμχ",
+      "eshop_product_id" : 12699,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54966525/Shnuggle-Mpaniera-Morou-Gri-STB-WGY-EUR.html",
+      "skroutz_page_product_id" : 54966525 ,
+      "title" : "Shnuggle toddler Μπανιέρα Γκρι",
+      "eshop_product_id" : 12128,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48472916/Tommee-Tippee-CHeirokinito-Aplo-THilastro-100ml-540317.html",
+      "skroutz_page_product_id" : 48472916 ,
+      "title" : "Tommee Tippee Χειροκίνητο Απλό Θήλαστρο 100ml",
+      "eshop_product_id" : 12371,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/49111229/Hubble-Connected-Nursery-Pal-Essential-Asyrmati-Endoepikoinonia-Morou-me-Kamera-Othoni-2-8-Amfidromi-Epikoinonia-Nanourismata-HU251477.html",
+      "skroutz_page_product_id" : 49111229 ,
+      "title" : "Hubble Connected Nursery Pal Essential Ασύρματη Ενδοεπικοινωνία Μωρού με Κάμερα & Οθόνη 2.8" ,
+      "eshop_product_id" : 7752,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51042837/Hubble-Connected-PSifiakos-Vrefozygos-4420-WHEU-01.html",
+      "skroutz_page_product_id" : 51042837 ,
+      "title" : "Hubble Connected Ψηφιακός Βρεφοζυγός",
+      "eshop_product_id" : 7755,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/50248885/Hubble-Connected-Nursery-Pal-Link-Premium-Asyrmati-Endoepikoinonia-Morou-me-Kamera-Othoni-5-Amfidromi-Epikoinonia-Nanourismata-4444-WHGR-01.html",
+      "skroutz_page_product_id" : 50248885 ,
+      "title" : "Hubble Connected Nursery Pal Link Premium Ασύρματη Ενδοεπικοινωνία Μωρού με Κάμερα & Οθόνη 5" ,
+      "eshop_product_id" : 7751,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/50248886/Hubble-Connected-Asyrmati-Endoepikoinonia-Morou-me-Amfidromi-Epikoinonia-4461-WHEU-02.html",
+      "skroutz_page_product_id" : 50248886 ,
+      "title" : "Hubble Connected Ασύρματη Ενδοεπικοινωνία Μωρού με Αμφίδρομη Επικοινωνία",
+      "eshop_product_id" : 7754,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48201818/Dr-Brown-s-Antallaktika-Kalamakia-apo-Plastiko-TC-073.html",
+      "skroutz_page_product_id" : 48201818 ,
+      "title" : "Dr. Brown's Ανταλλακτικά Καλαμάκια από Πλαστικό",
+      "eshop_product_id" : 12678,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51449028/Yuko-b-Kasetina-Plenomeni-Jungle-Carnival-prasini.html",
+      "skroutz_page_product_id" : 51449028 ,
+      "title" : "Yuko.b: Κασετίνα Πλενόμενη Jungle Carnival-πράσινη",
+      "eshop_product_id" : 12649,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51449027/Yuko-b-Kasetina-Plenomeni-Jungle-Carnival-roz.html",
+      "skroutz_page_product_id" : 51449027 ,
+      "title" : "Yuko.b: Κασετίνα Πλενόμενη Jungle Carnival-ΡΟΖ",
+      "eshop_product_id" : 12643,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51449038/Yuko-b-Kasetina-Plenomeni-Jungle-Carnival-mple.html",
+      "skroutz_page_product_id" : 51449038 ,
+      "title" : "Yuko.b: Κασετίνα Πλενόμενη Jungle Carnival-ΜΠΛΕ",
+      "eshop_product_id" : 12638,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51449799/Yuko-B-Scholiki-Tsanta-Platis-se-Prasino-chroma-10lt-YB-200-053.html",
+      "skroutz_page_product_id" : 51449799 ,
+      "title" : "Yuko.B Σχολική Τσάντα Πλάτης σε Πράσινο χρώμα 10lt",
+      "eshop_product_id" : 12635,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51449801/Yuko-B-Scholiki-Tsanta-Platis-se-Roz-chroma-M25-x-P14-x-Y28ek-YB-200-051.html",
+      "skroutz_page_product_id" : 51449801 ,
+      "title" : "Yuko.B Σχολική Τσάντα Πλάτης σε ΡΟΖ χρώμα 10lt",
+      "eshop_product_id" : 12631,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51449806/Yuko-B-Scholiki-Tsanta-Platis-se-Mple-chroma-M25-x-P14-x-Y28ek-YB-200-052.html",
+      "skroutz_page_product_id" : 51449806 ,
+      "title" : "Yuko.B Σχολική Τσάντα Πλάτης σε ΜΠΛΕ χρώμα 10lt",
+      "eshop_product_id" : 12621,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/55275292/Babyono-Set-Peripoiisis-Nychion-Morou-Leyko-BN398-03.html",
+      "skroutz_page_product_id" : 55275292 ,
+      "title" : "Babyono Σετ Περιποίησης Νυχιών Μωρού Λευκό",
+      "eshop_product_id" : 12608,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/30947786/Fresk-Paidiki-Omprela-Mpastouni-Prasini-me-Diametro-80ek-FR-FR500-05.html",
+      "skroutz_page_product_id" : 30947786 ,
+      "title" : "Fresk Παιδική Ομπρέλα Μπαστούνι Πράσινη με Διάμετρο 80εκ.",
+      "eshop_product_id" : 12605,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/37485108/Safta-Paidiki-Omprela-Mpastouni-Minnie-Mov-me-Diametro-84ek-312212118.html",
+      "skroutz_page_product_id" : 37485108 ,
+      "title" : "Safta Παιδική Ομπρέλα Μπαστούνι Minnie Μωβ με Διάμετρο 84εκ.",
+      "eshop_product_id" : 12598,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/56271318/Safta-Paidiki-Omprela-Mpastouni-Aytomati-Kokkini-me-Diametro-48ek-312214119.html",
+      "skroutz_page_product_id" : 56271318 ,
+      "title" : "Safta Παιδική Ομπρέλα Μπαστούνι Αυτόματη Κόκκινη με Διάμετρο 48εκ.",
+      "eshop_product_id" : 12596,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48110824/Paw-Patrol-Paidiki-Omprela-Mpastouni-Mple-me-Diametro-86ek-358127.html",
+      "skroutz_page_product_id" : 48110824 ,
+      "title" : "Paw Patrol Παιδική Ομπρέλα Μπαστούνι Μπλε με Διάμετρο 86εκ.",
+      "eshop_product_id" : 12592,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/48110816/Peppa-Pig-Paidiki-Omprela-Mpastouni-Roz-me-Diametro-80ek-340580.html",
+      "skroutz_page_product_id" : 48110816 ,
+      "title" : "Peppa Pig Παιδική Ομπρέλα Μπαστούνι Ροζ με Διάμετρο 80εκ.",
+      "eshop_product_id" : 12589,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51322388/Kasetina-Peppa-Pig-Ice-Cream-Roz-Menta-20-X-7-X-7-Cm.html",
+      "skroutz_page_product_id" : 51322388 ,
+      "title" : "Κασετίνα Peppa Pig Ice Cream Ροζ Μέντα 20 X 7 X 7 Cm",
+      "eshop_product_id" : 12585,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54696900/A-Little-Lovely-Company-Kasetina-me-1-THiki-PEGABL22.html",
+      "skroutz_page_product_id" : 54696900 ,
+      "title" : "A Little Lovely Company Κασετίνα με 1 Θήκη Galaxy",
+      "eshop_product_id" : 12581,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54696896/A-Little-Lovely-Company-Kasetina-me-1-THiki-PEUDPU21.html",
+      "skroutz_page_product_id" : 54696896 ,
+      "title" : "A Little Lovely Company Κασετίνα με 1 Θήκη Unicorn dreams",
+      "eshop_product_id" : 12577,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/37600891/A-Little-Lovely-Company-Butterflies-Kasetina-Varelaki-me-1-THiki-se-Roz-chroma-1tmch-PEBUPI06.html",
+      "skroutz_page_product_id" : 37600891 ,
+      "title" : "A Little Lovely Company Butterflies Κασετίνα Βαρελάκι με 1 Θήκη σε Ροζ χρώμα 1τμχ",
+      "eshop_product_id" : 12573,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/44035243/A-Little-Lovely-Company-Kasetina-me-1-THiki-1tmch-PECRGR17.html",
+      "skroutz_page_product_id" : 44035243 ,
+      "title" : "A Little Lovely Company Κασετίνα με 1 Θήκη 1τμχ Crocodiles",
+      "eshop_product_id" : 12569,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/21366864/Fresk-Hedgehog-Kasetina-Varelaki-me-1-THiki-FR-FB980-05.html",
+      "skroutz_page_product_id" : 21366864 ,
+      "title" : "Fresk Hedgehog Κασετίνα Βαρελάκι με 1 Θήκη",
+      "eshop_product_id" : 12566,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/42918995/Fresk-Dino-Kasetina-Varelaki-me-1-THiki-se-Mple-chroma-1tmch-FR-FB980-10.html",
+      "skroutz_page_product_id" : 42918995 ,
+      "title" : "Fresk Dino Κασετίνα Βαρελάκι με 1 Θήκη σε Μπλε χρώμα 1τμχ",
+      "eshop_product_id" : 12563,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/44998712/Yuko-Zevra-Scholiki-Tsanta-Platis-Nipiagogeiou-se-Leyko-chroma-YB-200-026.html",
+      "skroutz_page_product_id" : 44998712 ,
+      "title" : "Yuko Ζέβρα Σχολική Τσάντα Πλάτης Νηπιαγωγείου σε Λευκό χρώμα",
+      "eshop_product_id" : 12557,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54137720/Yuko-B-Paidiki-Tsanta-Platis-Mpez-28x24x11ek-YB-200-049.html",
+      "skroutz_page_product_id" : 54137720 ,
+      "title" : "Yuko.B Παιδική Τσάντα Πλάτης Σκυλάκι Μπεζ 28x24x11εκ.",
+      "eshop_product_id" : 12552,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/43569878/Cat-Plastiko-Paidiko-Docheio-Fagitou-Mint-YB-300-024.html",
+      "skroutz_page_product_id" : 43569878 ,
+      "title" : "Yuko.B Cat Πλαστικό Παιδικό Δοχείο Φαγητού Mint",
+      "eshop_product_id" : 12547,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/43569856/Penguin-Plastiko-Paidiko-Docheio-Fagitou-Blue-YB-300-032.html",
+      "skroutz_page_product_id" : 43569856 ,
+      "title" : "Yuko.B Penguin Πλαστικό Παιδικό Δοχείο Φαγητού Blue",
+      "eshop_product_id" : 12543,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/43569655/Penguin-Plastiko-Paidiko-Docheio-Fagitou-Mint-YB-300-033-M17-x-P14-5-x-Y7-5ek.html",
+      "skroutz_page_product_id" : 43569655 ,
+      "title" : "Yuko.B Penguin Πλαστικό Παιδικό Δοχείο Φαγητού Mint",
+      "eshop_product_id" : 12540,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/43569942/Penguin-Plastiko-Paidiko-Docheio-Fagitou-Coral-YB-300-034.html",
+      "skroutz_page_product_id" : 43569942 ,
+      "title" : "Yuko.B Penguin Πλαστικό Παιδικό Δοχείο Φαγητού Coral",
+      "eshop_product_id" : 12536,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/40964759/Yuko-B-Plastiko-Paidiko-Docheio-Fagitou-Roz-Koukouvagia-YB-300-001-M16-x-P12-x-Y7ek.html",
+      "skroutz_page_product_id" : 40964759 ,
+      "title" : "Yuko.B Πλαστικό Παιδικό Δοχείο Φαγητού Ροζ Κουκουβάγια",
+      "eshop_product_id" : 12532,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54641312/Yuko-B-Scholiki-Tsanta-Platis-Gymnasiou-Lykeiou-se-Prasino-chroma-M25-x-P14-x-Y28ek-YB-200-056.html",
+      "skroutz_page_product_id" : 54641312 ,
+      "title" : "Yuko.B Σχολική Τσάντα Πλάτης και κασετίνα-Πράσινο",
+      "eshop_product_id" : 12527,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54641301/Yuko-B-Scholiki-Tsanta-Platis-Gymnasiou-Lykeiou-se-Mple-chroma-M25-x-P14-x-Y28ek-YB-200-055.html",
+      "skroutz_page_product_id" : 54641301 ,
+      "title" : "Yuko.B Σχολική Τσάντα Πλάτης και κασετίνα-Μπλε",
+      "eshop_product_id" : 12521,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54641307/Yuko-B-Scholiki-Tsanta-Platis-Gymnasiou-Lykeiou-se-Roz-chroma-M25-x-P14-x-Y28ek-YB-200-054.html",
+      "skroutz_page_product_id" : 54641307 ,
+      "title" : "Yuko.B Σχολική Τσάντα Πλάτης και κασετίνα-Ροζ",
+      "eshop_product_id" : 12514,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/32670511/Yuko-B-Koukouvagia-Plastiko-Paidiko-Docheio-Fagitou-Mple-YB-300-002-M16-x-P12-x-Y7ek.html",
+      "skroutz_page_product_id" : 32670511 ,
+      "title" : "Yuko.B Κουκουβάγια Πλαστικό Παιδικό Δοχείο Φαγητού Μπλε",
+      "eshop_product_id" : 12496,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/55429412/Fresk-Swallow-Paidiko-Pagouri-THermos-Anoxeidoto-me-Kalamaki-me-Kalamaki-350ml-FD300-15.html",
+      "skroutz_page_product_id" : 55429412 ,
+      "title" : "Fresk Swallow Παιδικό Παγούρι Θερμός Ανοξείδωτο με Καλαμάκι 350ml",
+      "eshop_product_id" : 12492,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/27472821/Dooky-Tsanta-Allaxiera-Platis-128201-Grey-37x30x37ek.html",
+      "skroutz_page_product_id" : 27472821 ,
+      "title" : "Dooky Τσάντα-Αλλαξιέρα Πλάτης Grey",
+      "eshop_product_id" : 12479,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/46215901/Jabadabado-Perpatoura-gia-12-Minon-S1005.html",
+      "skroutz_page_product_id" : 46215901 ,
+      "title" : "Jabadabado Περπατούρα Πράσινη Teddy",
+      "eshop_product_id" : 12473,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/55390334/A-Little-Lovely-Company-Mpoukali-Diplo-Toichoma-Anoxeidoto-Atsali-350ml-Galaxy-Dbssga78-dbssga78.html",
+      "skroutz_page_product_id" : 55390334 ,
+      "title" : "A Little Lovely Company Μπουκάλι Διπλό Τοίχωμα Ανοξείδωτο Ατσάλι 350ml Galaxy",
+      "eshop_product_id" : 12464,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/55717612/Blossoms-Plastiko-Paidiko-Set-Fagitou-Prasino-15-8-x-14-x-7ek-SBSEBL44.html",
+      "skroutz_page_product_id" : 55717612 ,
+      "title" : "A Little Lovely Company Blossoms Πλαστικό Παιδικό Σετ 4 Φαγητοδοχεία",
+      "eshop_product_id" : 12458,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/17251003/Agnotis-Baby-Eco-Panes-me-Aytokollito-No-3-gia-4-9kg-50tmch.html",
+      "skroutz_page_product_id" : 17251003 ,
+      "title" : "Agnotis Baby Eco Πάνες με Αυτοκόλλητο No. 3 για 4-9kg 50τμχ",
+      "eshop_product_id" : 12424,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/5586024/Real-Care-Antiftheiriko-Sampouan-CHtenaki-Losion-Easy-Lice-gia-Paidia-3tmch.html",
+      "skroutz_page_product_id" : 5586024 ,
+      "title" : "Real Care Αντιφθειρικό Σαμπουάν , Χτενάκι & Λοσιόν Easy Lice για Παιδιά 3τμχ",
+      "eshop_product_id" : 12416,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/17981006/Leriva-Pharma-CHtenaki-Losion-gia-Prolipsi-Antimetopisi-Enantia-stis-PSeires-No-More-Lice-gia-Paidia-60ml.html",
+      "skroutz_page_product_id" : 17981006 ,
+      "title" : "Leriva Pharma Χτενάκι & Λοσιόν για Πρόληψη & Αντιμετώπιση Ενάντια στις Ψείρες No More Lice για Παιδιά 60ml",
+      "eshop_product_id" : 12414,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/6151669/InterMed-Paidiko-Afroloutro-Babyderm-Girls-gia-tin-Eyaisthiti-Periochi-se-Morfi-Kremas-300ml.html",
+      "skroutz_page_product_id" : 6151669 ,
+      "title" : "InterMed Παιδικό Αφρόλουτρο Babyderm Girls για την Ευαίσθητη Περιοχή σε Μορφή Κρέμας 300ml",
+      "eshop_product_id" : 12410,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/4944307/Frezyderm-Ypoallergiko-Paidiko-Afroloutro-Sensitive-Kids-Intim-Girl-me-CHamomili-gia-tin-Eyaisthiti-Periochi-se-Morfi-Afrou-250ml.html",
+      "skroutz_page_product_id" : 4944307 ,
+      "title" : "Frezyderm Υποαλλεργικό Παιδικό Αφρόλουτρο Sensitive Kids Intim Girl με Χαμομήλι για την Ευαίσθητη Περιοχή σε Μορφή Αφρού 250ml",
+      "eshop_product_id" : 12408,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/3608467/Frezyderm-Ypoallergiko-Paidiko-Sampouan-Sensitive-Kids-gia-Eykolo-CHtenisma-se-Morfi-Gel-200ml.html",
+      "skroutz_page_product_id" : 3608467 ,
+      "title" : "Frezyderm Υποαλλεργικό Παιδικό Σαμπουάν Sensitive Kids για Εύκολο Χτένισμα σε Μορφή Gel 200ml",
+      "eshop_product_id" : 12397,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/51811658/Pagouri-THermos-500ml-Kalamaki-B-box-Lilac-Pop.html",
+      "skroutz_page_product_id" : 51811658 ,
+      "title" : "B.box Παγούρι Θερμός 500ml Καλαμάκι Lilac Pop",
+      "eshop_product_id" : 12365,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/54124284/B-Box-Mpoukali-THermos-Blue-green.html",
+      "skroutz_page_product_id" : 54124284 ,
+      "title" : "B.Box Μπουκάλι Θερμός Blue-green",
+      "eshop_product_id" : 12360,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22864340/B-Box-Vrefiko-THermos-Fagitou-Strawberry.html",
+      "skroutz_page_product_id" : 22864340 ,
+      "title" : "B.Box Βρεφικό Θερμός Φαγητού Strawberry",
+      "eshop_product_id" : 12353,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/22864342/B-Box-Vrefiko-THermos-gia-Ygra-Fagita-Anoxeidoto.html",
+      "skroutz_page_product_id" : 22864342 ,
+      "title" : "B.Box Βρεφικό Θερμός Φαγητού Blue-Green",
+      "eshop_product_id" : 12344,
+      "auto_update" : false
+    },
+    {
+      "merchant_product_id" : "",
+      "skroutz_page_url" : "https://www.skroutz.gr/s/29263840/Tommee-Tippee-Plastiko-Paidiko-Set-Fagitou-423576.html",
+      "skroutz_page_product_id" : 29263840 ,
+      "title" : "Tommee Tippee Πλαστικό Παιδικό Σετ Φαγητού",
+      "eshop_product_id" : 12334,
+      "auto_update" : false
+    }
+  ]
+}

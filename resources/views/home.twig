@@ -1,0 +1,52 @@
+{% extends "layouts/base.twig" %}
+{% block title %}home{% endblock %}
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+    <h1 class="pagination-link">Products needs attention at SKROUTZ</h1>
+    <p class="important">
+        List of products not listed first
+    </p>
+
+    {% for key,product in products_updated %}
+        {% if product['product_new_price_percentage_profit_after_commission'] < 25 %}
+            {% set final_percentage_profit_class = 'low_profit' %}
+        {% else %}
+            {% set final_percentage_profit_class = 'normal_profit' %}
+        {% endif %}
+        {% if product['dry_run'] is same as(true) %}
+            <h2>[NOTIFY ONLY]</h2>
+        {% endif %}
+        <ul>
+            <li>Product: {{ product['product_title'] }}</li>
+            <li>Product Code: {{ product['product_code'] }}</li>
+            <li>Lowest price at skroutz: {{ product['product_lowest_price_skroutz'] }}&#8364;</li>
+            <li>Product potential price: {{ product['product_new_price'] }}&#8364;</li>
+            <li>Product potential price profit: {{ product['product_new_price_percentage_profit'] }}%</li>
+            <li>Product potential price profit after skroutz commission: <span class="{{ final_percentage_profit_class }}">{{ product['product_new_price_percentage_profit_after_commission'] }}%</span></li>
+            <li>Product skroutz url <a href="{{ product['product_page_url'] }}">{{  product['product_title'] }}</a></li>
+        </ul>
+    {% endfor %}
+
+    {% if current_batch_paging != last_batch_paging and current_batch_paging is same as(1) %}
+        <a class="pagination-link" href="/home/?page={{ current_batch_paging + 1 }}">Next page ({{ current_batch_paging + 1 }})</a>
+    {% elseif current_batch_paging < last_batch_paging and current_batch_paging > 1 %}
+        <a class="pagination-link" href="/home/?page={{ current_batch_paging - 1 }}">Previous page ({{ current_batch_paging - 1 }})</a>
+        <a class="pagination-link" href="/home/?page={{ current_batch_paging + 1 }}">Next page ({{ current_batch_paging + 1 }})</a>
+    {% elseif current_batch_paging is same as(last_batch_paging) and current_batch_paging > 1 %}
+        <a class="pagination-link" href="/home/?page={{ current_batch_paging - 1 }}">Previous page ({{ current_batch_paging - 1 }})</a>
+    {% endif %}
+
+    <h2>Issues found</h2>
+    <ul>
+        {% for key,issue in issuesReadingPrices %}
+            <li>
+                Product skroutz url <a href="{{ issue['product_page_url'] }}">{{  issue['product_page_url'] }}</a>
+                <br>
+                <small>{{ issue['message'] }}</small>
+            </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
