@@ -14,6 +14,8 @@ use Twig\Loader\FilesystemLoader;
 
 
 require __DIR__ . '/../vendor/autoload.php';
+$dotenv = Dotenv::createImmutable(__DIR__ . '/..');
+$dotenv->load();
 
 // Create a simple "default" Doctrine ORM configuration for Attributes
 $config = ORMSetup::createAttributeMetadataConfiguration(
@@ -23,16 +25,15 @@ $config = ORMSetup::createAttributeMetadataConfiguration(
 
 // configuring the database connection
 $connection = DriverManager::getConnection([
+    'host' => '127.0.0.1',
+    'dbname'   => 'cdx_cloud',
     'driver' => 'pdo_mysql',
     'user'     => env('DB_USER'),
     'password' => env('DB_PASSWORD'),
-    'dbname'   => 'cdx_cloud',
 ], $config);
 
 $entityManager = new EntityManager($connection, $config);
 
-$dotenv = Dotenv::createImmutable(__DIR__ . '/..');
-$dotenv->load();
 Handler::setup();
 $routesPath = __DIR__ . '/../config/routes.php';
 
