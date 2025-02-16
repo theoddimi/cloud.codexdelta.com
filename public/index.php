@@ -24,8 +24,8 @@ $config = ORMSetup::createAttributeMetadataConfiguration(
 // configuring the database connection
 $connection = DriverManager::getConnection([
     'driver' => 'pdo_mysql',
-    'user'     => 'root',
-    'password' => 'nte1352nte',
+    'user'     => env('DB_USER'),
+    'password' => env('DB_PASSWORD'),
     'dbname'   => 'cdx_cloud',
 ], $config);
 
