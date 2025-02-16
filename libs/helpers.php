@@ -4,6 +4,8 @@ use Codexdelta\App\App;
 use Codexdelta\Libs\Arr;
 use Codexdelta\Libs\Exceptions\ExceptionCase;
 use Codexdelta\Libs\Exceptions\MissingEnvironmentVariableException;
+use Codexdelta\Libs\Http\CdxRequest;
+use Codexdelta\Libs\Http\CdxSession;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\VarDumper\Caster\ScalarStub;
 use Symfony\Component\VarDumper\VarDumper;
@@ -139,7 +141,24 @@ if (!function_exists('dd')) {
 if (! function_exists('view')) {
     function view($view = null, $data = [], $mergeData = [])
     {
-        return new Response(application()->getTwig()->render($view, $data), RESPONSE::HTTP_OK);
+        return new Response(application()->getTwig()->render($view, array_merge($data, [
+            'globalMessage' => implode(" | ", session()->getFlashBag()->get('globalMessage')),
+            'isAuthenticated' => session()->has('auth_token')
+        ])), RESPONSE::HTTP_OK);
+    }
+}
+
+if (! function_exists('request')) {
+    function request(): CdxRequest
+    {
+        return App::get()->getRequest();
+    }
+}
+
+if (! function_exists('session')) {
+    function session(): CdxSession
+    {
+        return App::get()->getRequest()->session();
     }
 }
 
@@ -182,3 +201,4 @@ if (! function_exists('config')) {
         }
     }
 }
+

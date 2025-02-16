@@ -9,16 +9,24 @@ use Symfony\Component\HttpFoundation\Request as SymfonyRequest;
 
 class CdxRequest extends SymfonyRequest
 {
+    protected $json;
+
     /**
      * The route resolver callback.
      *
      * @var \Closure
      */
     protected $routeResolver;
+
     public static function capture()
     {
         static::enableHttpMethodParameterOverride();
-        return static::createFromBase(SymfonyRequest::createFromGlobals());
+        $request = static::createFromBase(SymfonyRequest::createFromGlobals());
+        if (!$request->hasSession()) {
+            $request->setSession(CdxSession::init());
+        }
+
+        return $request;
     }
 
     /**
@@ -59,6 +67,11 @@ class CdxRequest extends SymfonyRequest
     public function url()
     {
         return rtrim(preg_replace('/\?.*/', '', $this->getUri()), '/');
+    }
+
+    public function user()
+    {
+        return $this->getSession()->get('auth_user') ?? null;
     }
 
     /**
@@ -390,6 +403,18 @@ class CdxRequest extends SymfonyRequest
     {
         return Str::contains($this->header('CONTENT_TYPE') ?? '', ['/json', '+json']);
     }
+
+    public function session()
+    {
+        return $this->session;
+    }
+
+    public function validateToken()
+    {
+
+    }
+
+//    public function csrfToken()
 
     protected function retrieveItem($source, $key, $default)
     {

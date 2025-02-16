@@ -12,6 +12,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
 use Twig\Loader\FilesystemLoader;
 
+
 require __DIR__ . '/../vendor/autoload.php';
 
 // Create a simple "default" Doctrine ORM configuration for Attributes
@@ -38,8 +39,12 @@ $routesPath = __DIR__ . '/../config/routes.php';
 $loader = new FilesystemLoader(__DIR__ . '/../resources/views/');
 
 $twig = new Environment($loader, [
-    'cache' => false// __DIR__ . '/storage/cache/views_cache',
+    'cache' => false,// __DIR__ . '/storage/cache/views_cache',
+    'debug' => true
 ]);
+$twig->addExtension(new \Twig\Extension\DebugExtension());
+
+
 
 $request = CdxRequest::capture();
 $response = App::getInstance($routesPath, $twig, $entityManager)->handle($request);

@@ -1,0 +1,25 @@
+{% extends "layouts/base.twig" %}
+{% block title %}Eshop - Retail System Warehouse{% endblock %}
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+    <div class="container" style="display: flex; justify-content: center; column-gap: 2em;">
+        <h1>LOGIN</h1>
+        <form action="/auth" method="post">
+            <input type="hidden" name="csrf_token" value="{{ csrf }}">
+            <label for="email">
+                <i class="fas fa-user"></i>
+            </label>
+            <input type="text" name="email" placeholder="Email" id="email" required>
+            <label for="password">
+                <i class="fas fa-lock"></i>
+            </label>
+            <input type="password" name="password" placeholder="Password" id="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </div>
+{% endblock %}
+
+

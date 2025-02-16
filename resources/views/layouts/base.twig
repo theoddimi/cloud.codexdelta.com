@@ -9,11 +9,31 @@
     {% endblock %}
 </head>
 <body>
-<div id="content">{% block content %}{% endblock %}</div>
+<div id="content">
+    {% if globalMessage %}
+        <p class="global-message">{{ globalMessage }}</p>
+    {% endif %}
+
+    {% if isAuthenticated %}
+        <form method="POST" action="/logout" style="display:inline;">
+            <button type="submit">Logout</button>
+        </form>
+    {% endif %}
+    <div class="container" style="display: flex; justify-content: center; column-gap: 2em; flex-direction: column; align-items: center">
+        <div>
+            <h1 class="pagination-link" style="">CODEXDELTA all in one platform</h1>
+        </div>
+
+    {% block content %}{% endblock %}
+    </div>
+</div>
 <div id="footer">
     {% block footer %}
         <p class="blue"> &copy; Copyright 2024 by <a href="https://codexdelta.com/">CODEXDELTA</a></p>
     {% endblock %}
 </div>
 </body>
+{% block javascripts %}
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+{% endblock %}
 </html>

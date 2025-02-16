@@ -39,10 +39,13 @@ class ComposerStaticInit957c4b30c1562a7627f6a6b2e6e8a8b7
             'Symfony\\Polyfill\\Intl\\Grapheme\\' => 31,
             'Symfony\\Polyfill\\Ctype\\' => 23,
             'Symfony\\Contracts\\Service\\' => 26,
+            'Symfony\\Contracts\\EventDispatcher\\' => 34,
             'Symfony\\Contracts\\Cache\\' => 24,
             'Symfony\\Component\\VarExporter\\' => 30,
             'Symfony\\Component\\VarDumper\\' => 28,
             'Symfony\\Component\\String\\' => 25,
+            'Symfony\\Component\\Security\\Core\\' => 32,
+            'Symfony\\Component\\PasswordHasher\\' => 33,
             'Symfony\\Component\\HttpFoundation\\' => 33,
             'Symfony\\Component\\DomCrawler\\' => 29,
             'Symfony\\Component\\CssSelector\\' => 30,
@@ -52,6 +55,7 @@ class ComposerStaticInit957c4b30c1562a7627f6a6b2e6e8a8b7
         'P' => 
         array (
             'Psr\\Log\\' => 8,
+            'Psr\\EventDispatcher\\' => 20,
             'Psr\\Container\\' => 14,
             'Psr\\Cache\\' => 10,
             'PhpOption\\' => 10,
@@ -126,6 +130,10 @@ class ComposerStaticInit957c4b30c1562a7627f6a6b2e6e8a8b7
         array (
             0 => __DIR__ . '/..' . '/symfony/service-contracts',
         ),
+        'Symfony\\Contracts\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/event-dispatcher-contracts',
+        ),
         'Symfony\\Contracts\\Cache\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/cache-contracts',
@@ -141,6 +149,14 @@ class ComposerStaticInit957c4b30c1562a7627f6a6b2e6e8a8b7
         'Symfony\\Component\\String\\' => 
         array (
             0 => __DIR__ . '/..' . '/symfony/string',
+        ),
+        'Symfony\\Component\\Security\\Core\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/security-core',
+        ),
+        'Symfony\\Component\\PasswordHasher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/symfony/password-hasher',
         ),
         'Symfony\\Component\\HttpFoundation\\' => 
         array (
@@ -165,6 +181,10 @@ class ComposerStaticInit957c4b30c1562a7627f6a6b2e6e8a8b7
         'Psr\\Log\\' => 
         array (
             0 => __DIR__ . '/..' . '/psr/log/src',
+        ),
+        'Psr\\EventDispatcher\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/psr/event-dispatcher/src',
         ),
         'Psr\\Container\\' => 
         array (

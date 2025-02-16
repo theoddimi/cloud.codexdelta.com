@@ -1,0 +1,24 @@
+{% extends "layouts/base.twig" %}
+{% block title %}home{% endblock %}
+{% block head %}
+
+{% endblock head %}
+
+{% block content %}
+    <div>
+        <button onclick="window.open('https://www.skroutz.gr/s/55573265/Water-Revolution-Pagouri-500ml-Gri.html?adv_c=x4mgbg%3D%3D--vm%2FoK4CTaQBaJlFn--HQ85pR1eqeNh5igDdjSBsA%3D%3D&product_id=202693899&sponsored=cpc', '_blank')">Open Website</button>
+
+        <iframe src=""></iframe>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script>
+
+
+        fetch('/products/skroutz/fetch')  // Call PHP endpoint
+            .then(response => response.text())
+            .then(data => console.log(data))
+            .catch(error => console.error("Error:", error));
+    </script>
+{% endblock %}

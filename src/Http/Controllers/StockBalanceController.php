@@ -7,13 +7,18 @@ use Codexdelta\App\Enums\NotificationType;
 use Codexdelta\Libs\Exceptions\ExceptionCase;
 use Codexdelta\Libs\Exceptions\InvalidArgumentException;
 use Codexdelta\Libs\Exceptions\MissingEnvironmentVariableException;
+use Codexdelta\Libs\Http\CdxRequest;
+use Codexdelta\Libs\Http\CdxResponse;
 use Codexdelta\Libs\HttpApi\ApiHelpers\RequestContentType;
 use Codexdelta\Libs\HttpApi\Oxygen\OxygenApi;
 use Codexdelta\Libs\HttpApi\Woo\WoocommerceApi;
 use Codexdelta\Libs\HttpApi\Woo\WoocommerceResourceEndpoint;
 use Codexdelta\Libs\Mailer\Mailer;
+use Codexdelta\Libs\Url\UrlGenerator;
 use Exception;
+use http\Url;
 use Symfony\Component\DomCrawler\Crawler;
+use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
 
 class StockBalanceController
@@ -29,7 +34,7 @@ class StockBalanceController
     {
         $notificationClient = new NotificationClient();
         $notification = $notificationClient->resolve(NotificationType::MAILER);
-
+//dd(UrlGenerator::init());
 //        if (application()->getRequest()->query->has('page')) {
 //            $page = application()->getRequest()->query->get('page');
 //        }
@@ -73,10 +78,11 @@ class StockBalanceController
                     continue;
                 }
 
-                $timeToRetrieveFromWooStart = microtime(true);
+//                $timeToRetrieveFromWooStart = microtime(true);
 
                 foreach ($wooProductsPages as $wooProductPage) {
                     foreach ($wooProductPage as $wooProduct) {
+                        // For each woo product in paginated group check if sku matches the current in loop oxygen product
                         $found = mb_strtoupper($oxygenProduct['code']) === mb_strtoupper($wooProduct["sku"]);
 
                         if (false !== $found) {
@@ -87,16 +93,35 @@ class StockBalanceController
                                 number_format((float)$wooProduct['regular_price'], 2, '.', '')
                                 === number_format((float)$oxygenProduct['sale_total_amount'], 2, '.', '')
                                 ? null
-                                : $oxygenProduct['code'];
+                                : [
+                                    'id' => $oxygenProduct['id'],
+                                    'code' => $oxygenProduct['code'],
+                                    'oxygen_selling_price' => $oxygenProduct['sale_total_amount'],
+                                    'eshop_has_sale_price' => !empty($wooProduct['sale_price']),
+                                    'price_diff_word' => "Eshop display price: <b>"
+                                        . (float)$wooProduct['price'] . "</b><br>Oxygen price: <b>"
+                                        . $oxygenProduct['sale_total_amount'] . "</b><br>Eshop base price: "
+                                        . (float)$wooProduct['regular_price'],
+                                    'eshop_link' => $wooProduct['permalink'],
+                                    'featured_image' => !empty($wooProduct['images']) ? $wooProduct['images'][0]['src'] : '',
+                                ];
 
-                            $stockMismatchAlert[] = $wooProduct['stock_quantity'] === (int)$oxygenProduct['quantity'] ? null : $oxygenProduct['code'];
+                            $stockMismatchAlert[] = $wooProduct['stock_quantity'] === (int)$oxygenProduct['quantity']
+                                ? null
+                                : [
+                                    'id' => $oxygenProduct['id'],
+                                    'code' => $oxygenProduct['code'],
+                                    'stock_quantity' => $oxygenProduct['quantity'],
+                                    'eshop_link' => $wooProduct['permalink'],
+                                    'featured_image' => !empty($wooProduct['images']) ? $wooProduct['images'][0]['src'] : '',
+                                ];
 
                             continue 3;
                         }
                     }
                 }
 
-                $timeToRetrieveFromWooEnd = microtime(true);
+//                $timeToRetrieveFromWooEnd = microtime(true);
             }
         }
 
@@ -120,6 +145,36 @@ class StockBalanceController
                 'prices_mismatch' => $priceAlert,
                 'stock_mismatch' => $stockMismatchAlert
             ]);
+    }
+
+    public function updateEshopPriceProductAction(string $productRetailSystemId, CdxRequest $request): JsonResponse
+    {
+        $eshopProductHasSalePrice = $request->get('eshop_product_has_sale')
+            ?? throw new Exception('Invalid eshop_product_has_sale parameter');
+
+        $updateData = [
+            true === (bool)$eshopProductHasSalePrice
+                ? 'sale_price'
+                : 'regular_price' => strval(floatval($request->get('price')))
+        ];
+
+        $this->updateProductsInEshopBySku($productRetailSystemId, $updateData);
+
+        return new JsonResponse([
+            'success' => true,
+            'message' => 'Stock updated',
+        ], Response::HTTP_OK);
+    }
+
+    public function updateEshopStockProductAction(string $productRetailSystemId, CdxRequest $request): JsonResponse
+    {
+        $updateData = ['stock_quantity' => intval($request->get('stock_quantity'))];
+        $this->updateProductsInEshopBySku($productRetailSystemId, $updateData);
+
+        return new JsonResponse([
+            'success' => true,
+            'message' => 'Stock updated',
+        ], Response::HTTP_OK);
     }
 
     private function parseOxygenProductsList()
@@ -210,14 +265,6 @@ class StockBalanceController
         } while($oxygenResultsKey <= count($oxygenProducts));
 
         return null;
-    }
-
-    private function scrapProductPageInSkroutz(array $productFromList):  false|null|string
-    {
-        $urlToScrap = escapeshellarg(data_get($productFromList,'skroutz_page_url'));
-        $nodeCommand = $_SERVER['DOCUMENT_ROOT'] . '/../resources/js/crawl.cjs ' . $urlToScrap;
-
-        return shell_exec('node ' . $nodeCommand);
     }
 
     /**
@@ -343,6 +390,22 @@ class StockBalanceController
     }
 
 
+    private function updateProductsInEshopBySku(string $productSku, array $data)
+    {
+        $wooApi = WoocommerceApi::initRequest(
+            endpoint: WoocommerceResourceEndpoint::PRODUCTS,
+            queryParameters: ['sku' => $productSku],
+            contentType: RequestContentType::APPLICATION_JSON
+        );
+        $product = json_decode($wooApi->exec()->getResponseBody(), true);
+
+        $wooApi->setEndpoint(WoocommerceResourceEndpoint::UPDATE_PRODUCTS);
+        $wooApi->setEndpointSegments([$product[0]['id']]);
+        $wooApi->setRequestBody($data);
+        $wooApi->setContentType(RequestContentType::APPLICATION_JSON);
+
+        return json_decode($wooApi->exec()->getResponseBody(), true);
+    }
     private function getAllProductsInEshop(): \Generator
     {
         $wooApi = WoocommerceApi::initRequest(
@@ -350,8 +413,6 @@ class StockBalanceController
             contentType: RequestContentType::APPLICATION_JSON
         );
 
-        $productsMissingFromCompareList = [];
-        $wooProductsResults = [];
         $page = 1;
 
         do {
@@ -359,21 +420,5 @@ class StockBalanceController
             yield $page => $pageResult;
             $page++;
         } while (count($pageResult) > 0);
-//
-//        $eshopProductIdsInList = array_column($listProducts, 'eshop_product_id');
-//        $wooResultsKey = 0;
-//
-//        do {
-//            foreach ($wooProductsResults[$wooResultsKey] as $wooProduct) {
-//                if (!in_array($wooProduct["id"], $eshopProductIdsInList) && $wooProduct['stock_quantity'] > 0) {
-//                    $productsMissingFromCompareList[] = $wooProduct;
-//                }
-//            }
-//
-//            $wooResultsKey++;
-//        } while ($wooResultsKey < count($wooProductsResults));
-//
-//
-//        return $productsMissingFromCompareList;
     }
 }

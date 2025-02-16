@@ -4,13 +4,15 @@ namespace Codexdelta\Libs\Router;
 
 use Closure;
 use Codexdelta\App\App;
+use Codexdelta\App\Http\Middleware\AuthMiddleware;
 use Codexdelta\Libs\Exceptions\FourOhFourException;
 use Codexdelta\Libs\Http\CdxRequest;
 use Exception;
 use ReflectionMethod;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Response;
 
-class Router
+class Router implements RouterInterface
 {
     protected $routes = []; // stores routes
 
@@ -30,11 +32,15 @@ class Router
     }
 
     /**
-    * add routes to the $routes
-    */
-    public function addRoute(string $method, string $url, Closure|array $target)
+     * add routes to the $routes
+     */
+    protected function addRoute(string $method, string $url, Closure|array $target, $middleware = null)
     {
         $this->routes[$method][$url] = $target;
+
+//        if ($middleware) {
+//            $this->routes[$method][$url][] = 'middleware:' . $middleware::class;
+//        }
     }
 
     public function routes()
@@ -42,7 +48,26 @@ class Router
         return $this->routes;
     }
 
-    public static function get(string $url, $target = null)
+    public static function middleware(string $middleware, Closure $callback)
+    {
+        if($middleware === AuthMiddleware::NAME) {
+            $resolvedRoutes = static::singleton()->routes;
+            static::singleton()->routes = [];
+
+            $callback();
+
+            foreach (static::singleton()->routes as $method => $routes) {
+                foreach ($routes as $url => $action) {
+                    static::singleton()->routes[$method][$url][] = 'middleware:' . AuthMiddleware::class;
+                }
+            }
+        }
+
+        static::singleton()->routes["GET"] = array_merge(static::singleton()->routes["GET"] ?? [], $resolvedRoutes["GET"] ?? []);
+        static::singleton()->routes["POST"] = array_merge(static::singleton()->routes["POST"] ?? [], $resolvedRoutes["POST"] ?? []);
+    }
+
+    public static function get(string $url, $target = null): self
     {
         $router = static::singleton();
 
@@ -54,10 +79,44 @@ class Router
             throw new Exception('Invalid format for route');
         }
 
-//        return $router;
+        return $router;
+    }
+
+    public static function post(string $url, $target = null): self
+    {
+        $router = static::singleton();
+
+        if ($target instanceof Closure) {
+            $router->addRoute('POST', $url, $target);
+        } elseif (is_array($target) && count($target) === 2) {
+            $router->addRoute('POST', $url, $target);
+        } else {
+            throw new Exception('Invalid format for route');
+        }
+
+        return $router;
+    }
+
+    public static function put(string $url, $target = null): self
+    {
+        $router = static::singleton();
+
+        if ($target instanceof Closure) {
+            $router->addRoute('PUT', $url, $target);
+        } elseif (is_array($target) && count($target) === 2) {
+            $router->addRoute('PUT', $url, $target);
+        } else {
+            throw new Exception('Invalid format for route');
+        }
+
+        return $router;
     }
 
     public function resolve(CdxRequest $request) {
+        if (static::$instance instanceof Router && !empty($routes)) {
+            throw new Exception('koko');
+        }
+
         $method = $request->method();
         $url = $request->getPathInfo();
 
@@ -71,14 +130,25 @@ class Router
 //                    $controller = new$request;
                     if ($target instanceof Closure) {
                         return call_user_func_array($target, $params);
-                    } elseif (is_array($target) && count($target) === 2) {
+                    } elseif (is_array($target) && count($target) > 1) {
+
+                        if (isset($target[2])) {
+                            $middleware = substr($target[2], strlen('middleware:'));
+                            $middleware = new $middleware();
+                            $middlewareResponse = $middleware->apply($request);
+
+                            if ($middlewareResponse instanceof RedirectResponse) {
+                                $middlewareResponse->send();
+                                exit;
+                            }
+                        }
 
                         if (method_exists($target[0], $target[1])) {
                             $method = new ReflectionMethod($target[0], $target[1]);
                             $methodParameters = $method->getParameters();
 
                             foreach ($methodParameters as $parameter) {
-                                if ($parameter->getType()->getName() === CdxRequest::class) {
+                                if ($parameter->getType()?->getName() === CdxRequest::class) {
                                     $params[$parameter->getName()] = $request;
                                 }
                             };

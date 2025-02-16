@@ -3,13 +3,11 @@
 namespace Codexdelta\App;
 
 use Codexdelta\Libs\Http\CdxRequest;
+use Codexdelta\Libs\Http\CdxSession;
 use Codexdelta\Libs\Router\Router;
 use Doctrine\ORM\EntityManager;
 use Symfony\Component\HttpFoundation\Response;
 use Twig\Environment;
-use Twig\Error\LoaderError;
-use Twig\Error\RuntimeError;
-use Twig\Error\SyntaxError;
 
 class App
 {
@@ -19,7 +17,6 @@ class App
     protected Environment $twig;
 
     protected CdxRequest $request;
-
     protected EntityManager $entityManager;
 
     protected static $app;
@@ -59,9 +56,22 @@ class App
 
     public function getRequest(): CdxRequest
     {
+//        if ($this->request->isMethod('POST')) {
+//            if ($this->request->hasSession() && $this->request->session()->get('csrf_token') && $this->request->get('csrf_token')) {
+//                if ( hash_equals($this->request->session()->get('csrf_token'), $this->request->get('csrf_token')))
+//                {
+//                    return $this->request;
+//                } else {
+//                    throw new \Exception('No authenticated');
+//                }
+//            } else {
+//                throw new \Exception('No authenticated');
+//                // @TODO Check if request carries the bearer token and check for user
+//            }
+//        }
+
         return $this->request;
     }
-
 
     public function getTwig(): Environment
     {
@@ -80,5 +90,10 @@ class App
     public function getEntityManager(): EntityManager
     {
         return $this->entityManager;
+    }
+
+    public function getRouter(): Router
+    {
+        return $this->router;
     }
 }

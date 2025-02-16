@@ -5,32 +5,142 @@
 {% endblock head %}
 
 {% block content %}
-    <div class="container" style="display: flex; justify-content: center; column-gap: 2em;">
-        <div>
+    <div class="stock-container flex column-gap-5 padding-4" style="justify-content: center;">
+        <div class="text-center">
             <h3>Products missing from eshop - Total ({{ eshop_products_not_found|length }})</h3>
-            <ul style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
+            <ul class="box-shadow-basic-inset border-radius-4" style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
                 {% for key,product in eshop_products_not_found %}
-                    <li>Product Code: {{ product['product_code'] }}</li>
+                    <li class="has-border-1 border-color-lightgrey padding-4 border-radius-4 margin-2">
+                        <p>Product Code: <b>{{ product['product_code'] }}</b></p>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
-        <div>
+        <div class="text-center">
             <h3>Prices Mismatch - Total ({{ prices_mismatch|length }})</h3>
-            <ul style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
+            <ul class="box-shadow-basic-inset border-radius-4" style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
                 {% for key,product in prices_mismatch %}
-                    <li>Product Code: {{ product }}</li>
+                    <li class="has-border-1 border-color-lightgrey flex padding-4 align-items-center column-gap-5 justify-around border-radius-4 margin-2">
+                        <p><b>{{ product['code'] }}</b></p>
+                        <p>
+                            <span>{{ product['price_diff_word']|raw }}</span>
+                        </p>
+                        <div><a href="{{ product['eshop_link'] }}" target="_blank"><img width=100 src="{{ product['featured_image'] }}"></a></div>
+                        <button class="update-product-price-btn" data-product-id="{{ product['code'] }}" data-product-onsale="{{ product['eshop_has_sale_price'] }}" data-product-price="{{ product['oxygen_selling_price'] }}">Update Price</button>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
-        <div>
+        <div class="text-center">
             <h3>Stock Mismatch - Total ({{ stock_mismatch|length }})</h3>
-            <ul style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
+            <ul class="box-shadow-basic-inset border-radius-4" style="list-style: none; max-height: 400px; overflow: scroll; padding: 10px;">
                 {% for key,product in stock_mismatch %}
-                    <li>Product Code: {{ product }}</li>
+                    <li class="has-border-1 border-color-lightgrey flex padding-4 align-items-center column-gap-5 justify-around border-radius-4 margin-2">
+                        <p><b>{{ product['code'] }}</b></p>
+                        <div><a href="{{ product['eshop_link'] }}" target="_blank"><img width=100 src="{{ product['featured_image'] }}"></a></div>
+                        <button class="update-product-stock-btn" data-product-id="{{ product['code'] }}" data-product-quantity="{{ product['stock_quantity'] }}">Update Product</button>
+                    </li>
                 {% endfor %}
             </ul>
         </div>
     </div>
 {% endblock %}
 
+{% block javascripts %}
+    {{ parent() }}
+<script>
+
+    $(document).ready(function() {
+        $(".update-product-price-btn").on("click", function() {
+            let productId = $(this).data("product-id");
+            let productSystemPrice = $(this).data("product-price");
+            let productOnSale = $(this).data("product-onsale");
+            let buttons = $(".update-product-price-btn");
+            if (buttons.prop("disabled")) return; // Prevent multiple clicks
+            buttons.prop("disabled", true); // Disable button
+
+            updateEshopProductPrice(productId, productSystemPrice, productOnSale, $(this), buttons);
+        });
+
+        $(".update-product-stock-btn").on("click", function() {
+            let productId = $(this).data("product-id");
+            let productQuantity = $(this).data("product-price");
+            let buttons = $(".update-product-stock-btn");
+            if (buttons.prop("disabled")) return; // Prevent multiple clicks
+            buttons.prop("disabled", true); // Disable button
+
+            updateEshopProductQuantity(productId, productQuantity, $(this), buttons);
+        })
+    });
+
+    let isRequestInProgress = false;
+
+    function updateEshopProductPrice(productId, productSystemPrice, productOnSale, el, buttons) {
+        if (isRequestInProgress) {
+            console.log("Request already in progress...");
+            return; // Stop if a request is already in progress
+        }
+
+        isRequestInProgress = true;
+console.log(productSystemPrice, productOnSale);
+        fetch(`/products/${productId}/price/update`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf }}'
+            },
+            body: JSON.stringify({
+                price: productSystemPrice,
+                eshop_product_has_sale: productOnSale,
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    el.remove();
+                    buttons.prop("disabled", false);
+                    alert("Product updated successfully!");
+                } else {
+                    alert("Error updating product.");
+                }
+
+                isRequestInProgress = false;
+            })
+            .catch(error => console.error("Error:", error));
+    }
+
+    function updateEshopProductQuantity(productId, productQuantity, el, buttons) {
+        if (isRequestInProgress) {
+            console.log("Request already in progress...");
+            return; // Stop if a request is already in progress
+        }
+
+        isRequestInProgress = true;
+
+        fetch(`/products/${productId}/stock/update`, {
+            method: 'PUT',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRF-TOKEN': '{{ csrf }}'
+            },
+            body: JSON.stringify({
+                stock_quantity: productQuantity,
+            })
+        })
+            .then(response => response.json())
+            .then(data => {
+                if (data.success) {
+                    el.remove();
+                    buttons.prop("disabled", false);
+                    alert("Product updated successfully!");
+                } else {
+                    alert("Error updating product.");
+                }
+
+                isRequestInProgress = false;
+            })
+            .catch(error => console.error("Error:", error));
+    }
+</script>
+{% endblock %}
 
