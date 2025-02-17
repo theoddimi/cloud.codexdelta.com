@@ -70,7 +70,7 @@
 
         $(".update-product-stock-btn").on("click", function() {
             let productId = $(this).data("product-id");
-            let productQuantity = $(this).data("product-price");
+            let productQuantity = $(this).data("product-quantity");
             let buttons = $(".update-product-stock-btn");
             if (buttons.prop("disabled")) return; // Prevent multiple clicks
             buttons.prop("disabled", true); // Disable button
