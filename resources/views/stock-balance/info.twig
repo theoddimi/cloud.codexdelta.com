@@ -25,6 +25,12 @@
                         <p>
                             <span>{{ product['price_diff_word']|raw }}</span>
                         </p>
+                        <p>
+                            <span class="green">Profit: {{ product['profit'] }}</span>
+                        </p>
+                        <p>
+                            <span class="red">Including skroutz: {{ product['commission_applied_profit'] }}</span>
+                        </p>
                         <div><a href="{{ product['eshop_link'] }}" target="_blank"><img width=100 src="{{ product['featured_image'] }}"></a></div>
                         <button class="update-product-price-btn" data-product-id="{{ product['code'] }}" data-product-onsale="{{ product['eshop_has_sale_price'] }}" data-product-price="{{ product['oxygen_selling_price'] }}">Update Price</button>
                     </li>

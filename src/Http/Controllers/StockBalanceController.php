@@ -23,6 +23,8 @@ use Symfony\Component\HttpFoundation\Response;
 
 class StockBalanceController
 {
+    const SKROUTZ_PROFIT_PERCENTAGE = 11.5;
+
     const PROCESS_ITEMS_FROM_CONFIG_PER_PAGE = 20;
 
     const IGNORE_OXYGEN_CODES_PREFIX = ["CDX"];
@@ -87,6 +89,21 @@ class StockBalanceController
 
                         if (false !== $found) {
                             $searching[$groupKey][$key]['found'] = true;
+
+                            // Add skroutz profit from new potential price
+                            $amountOfSkroutzCommissionForPrice = $this->calculatePercentageResultForValue(
+                                self::SKROUTZ_PROFIT_PERCENTAGE,
+                                (float)$oxygenProduct['sale_total_amount']
+                            );
+
+                            $priceAfterSkroutzCommissionClearance = (float)$oxygenProduct['sale_total_amount'] - $amountOfSkroutzCommissionForPrice;
+                            $profitPercentageIncludingSkroutzCommission =
+                                $this->calculateProductProfitPercentageForPrice(
+                                    $oxygenProduct,
+                                    $priceAfterSkroutzCommissionClearance
+                                );
+
+
                             // COMPARE PRICES AND STOCK $this->comparePricesAndStock($wooProduct, $oxygenProduct);
                             $priceAlert[] = number_format((float)$wooProduct['price'], 2, '.', '')
                             === number_format((float)$oxygenProduct['sale_total_amount'], 2, '.', '') ||
@@ -104,6 +121,8 @@ class StockBalanceController
                                         . (float)$wooProduct['regular_price'],
                                     'eshop_link' => $wooProduct['permalink'],
                                     'featured_image' => !empty($wooProduct['images']) ? $wooProduct['images'][0]['src'] : '',
+                                    'profit' => $oxygenProduct['profit_ratio'],
+                                    'commission_applied_profit' => $profitPercentageIncludingSkroutzCommission
                                 ];
 
                             $stockMismatchAlert[] = $wooProduct['stock_quantity'] === (int)$oxygenProduct['quantity']
@@ -221,7 +240,6 @@ class StockBalanceController
         } catch (\Throwable $e) {
             throw new Exception($e->getMessage() . ' | Product: ' . $productProperties['code']);
         }
-
     }
 
     private function calculatePercentageResultForValue(float $percentage, float $value): float
