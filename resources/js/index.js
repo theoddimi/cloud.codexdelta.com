@@ -15,7 +15,7 @@ const test = () => {
 test();
 
 $(document).ready(function () {
-    $('.pagination-link').on('click', function () {
+    $('.trigger-loading').on('click', function () {
         $('body').css("background-color", "#00000047");
         $('body').append('<div style="position:fixed; width:100%; height: 100%; top: 0;"><div id="loader" style="position: absolute; top: 45%; left: 50%; width: 50px; height: 50px; z-index: 10; background-color: #336699"></div></div>');
         startLoaderEffect();
