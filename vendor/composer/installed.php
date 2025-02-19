@@ -3,7 +3,7 @@
         'name' => 'theo/crawler.codexdelta',
         'pretty_version' => 'dev-master',
         'version' => 'dev-master',
-        'reference' => '629d23a2e6660548f444b2a9721f24c25a2995bf',
+        'reference' => '8e9e59a96b3c650741a91f85ac38379ea0477eb1',
         'type' => 'project',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -388,7 +388,7 @@
         'theo/crawler.codexdelta' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '629d23a2e6660548f444b2a9721f24c25a2995bf',
+            'reference' => '8e9e59a96b3c650741a91f85ac38379ea0477eb1',
             'type' => 'project',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

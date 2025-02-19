@@ -6,19 +6,46 @@
 
 {% block content %}
     <div>
-        <button onclick="window.open('https://www.skroutz.gr/s/55573265/Water-Revolution-Pagouri-500ml-Gri.html?adv_c=x4mgbg%3D%3D--vm%2FoK4CTaQBaJlFn--HQ85pR1eqeNh5igDdjSBsA%3D%3D&product_id=202693899&sponsored=cpc', '_blank')">Open Website</button>
-
-        <iframe src=""></iframe>
+        {% for key,product in products %}
+            <li class="has-border-1 border-color-lightgrey padding-4 border-radius-4 margin-2">
+                <p>
+                    <b>{{ product['title'] }} - {{ product['eshop_product_id'] }}</b>
+                </p>
+                <button class="crawl-page-btn" data-eshop-product-id="{{ product['eshop_product_id'] }}">Crawl</button>
+            </li>
+        {% endfor %}
     </div>
 {% endblock %}
 
 {% block javascripts %}
+    {{ parent() }}
     <script>
+        $(document).ready(function() {
+            $(".crawl-page-btn").on("click", function () {
+                let productId = $(this).data("eshop-product-id");
 
-
-        fetch('/products/skroutz/fetch')  // Call PHP endpoint
-            .then(response => response.text())
-            .then(data => console.log(data))
-            .catch(error => console.error("Error:", error));
+                fetch(`/products/crawl/skroutz/fetch`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '{{ csrf }}'
+                    },
+                    body: JSON.stringify({
+                        eshop_product_id: productId,
+                    })
+                })
+                    .then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            console.log(data.my_price);
+                            $(this).parent().append('<p>My price:<span class="green"><b>' + data.my_price + '&#8364;</b></span></p>')
+                            $(this).parent().append('<p>Lowest price:<span class="red"><b>' + data.lowest_price + '&#8364;</b></span></p>')
+                        } else {
+                            alert(data.message);
+                        }
+                    })
+                    .catch(error => console.error("Error:", error));
+            });
+        });
     </script>
 {% endblock %}

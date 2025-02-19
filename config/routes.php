@@ -4,6 +4,7 @@ use Codexdelta\App\Http\Controllers\Auth\AuthenticationController;
 use Codexdelta\App\Http\Controllers\DomCrawlerController;
 use Codexdelta\App\Http\Controllers\HomeController;
 use Codexdelta\App\Http\Controllers\Oxygen\OxygenProductController;
+use Codexdelta\App\Http\Controllers\SkroutzController;
 use Codexdelta\App\Http\Controllers\StockBalanceController;
 use Codexdelta\Libs\Router\Router;
 
@@ -20,6 +21,7 @@ return function()
             Router::post('/logout', [AuthenticationController::class, 'logout']);
             Router::put('/products/:productRetailSystemId/price/update', [StockBalanceController::class, 'updateEshopPriceProductAction']);
             Router::put('/products/:productRetailSystemId/stock/update', [StockBalanceController::class, 'updateEshopStockProductAction']);
-            Router::get('/products/crawl/skroutz/fetch', [DomCrawlerController::class, 'crawl']);
+            Router::post('/products/crawl/skroutz/fetch', [DomCrawlerController::class, 'crawl']);
+            Router::get('/warehouse/skroutz', [SkroutzController::class, 'index']);
     });
 };
