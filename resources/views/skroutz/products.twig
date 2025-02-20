@@ -34,7 +34,7 @@
                         eshop_product_id: productId,
                     })
                 })
-                    .then(res=>res.clone().json())
+                    .then(res=>console.log(res))
                     .then(data => {
                         if (data.success) {
                             console.log(data.my_price);
