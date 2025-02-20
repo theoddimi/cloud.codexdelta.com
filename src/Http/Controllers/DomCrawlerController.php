@@ -13,31 +13,31 @@ class DomCrawlerController
     public function crawl(CdxRequest $request)
     {
         $issuesReadingPrices = [];
-        $productId = $request->get('eshop_product_id');
+        $skroutzProductPageHtml = $request->get('skroutz_product_html');
         $skroutzProductsScrapList = config('skroutz_api_mappings', 'ref_eshop');
 //        $allProductsInListCount = count($skroutzProductsScrapList);
 
-        $productFromFile = array_filter($skroutzProductsScrapList, fn($product) => $product['eshop_product_id'] === $productId);
-        $productFromFile = reset($productFromFile);
+//        $productFromFile = array_filter($skroutzProductsScrapList, fn($product) => $product['skroutz_page_url'] == $skroutzProductPageHtml);
+//        $productFromFile = reset($productFromFile);
+//        dd($productFromFile);
+//        if (false === $productFromFile) {
+//            return new JsonResponse([
+//                'success' => false,
+//            ], Response::HTTP_OK);
+//        }
 
-        if (false === $productFromFile) {
-            return new JsonResponse([
-                'success' => false,
-            ], Response::HTTP_OK);
-        }
-
-        $urlToScrap = escapeshellarg($productFromFile['skroutz_page_url']);
-        $nodeCommand = $_SERVER['DOCUMENT_ROOT'] . '/../resources/js/crawl.cjs ' . $urlToScrap;
-        $skroutzProductPageHtml = shell_exec('node ' . $nodeCommand);
+//        $urlToScrap = escapeshellarg($productFromFile['skroutz_page_url']);
+//        $nodeCommand = $_SERVER['DOCUMENT_ROOT'] . '/../resources/js/crawl.cjs ' . $urlToScrap;
+//        $skroutzProductPageHtml = shell_exec('node ' . $nodeCommand);
 
         $skroutzPageMyPrice = $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml);
 
-        if (!is_numeric($skroutzPageMyPrice)) {
-            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['name'] =
-                $productFromFile['skroutz_page_url'];
-            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['message'] =
-                'Could not crawl the price for my shop for the given URL. Possible issue: Product not listed to specific page.';
-        }
+//        if (!is_numeric($skroutzPageMyPrice)) {
+//            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['name'] =
+//                $productFromFile['skroutz_page_url'];
+//            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['message'] =
+//                'Could not crawl the price for my shop for the given URL. Possible issue: Product not listed to specific page.';
+//        }
 
         $skroutzPageMerchantsPrices = $this->crawlAndFindMerchantPricesButNotMineFromHtml($skroutzProductPageHtml);
 
@@ -45,24 +45,18 @@ class DomCrawlerController
             ### Compare the results with my shop's price
             $lowestPriceInPage = min($skroutzPageMerchantsPrices);
         } else {
-            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['name'] =
-                $productFromFile['skroutz_page_url'];
-            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['message'] =
-                'Could not collect merchant\'s prices.';
-        }
-
-        if ($issuesReadingPrices !== []) {
             return new JsonResponse([
                 'success' => false,
-                'message' => $issuesReadingPrices[$productFromFile["eshop_product_id"]]['message'],
+                'message' => 'Issue reading prices',
             ], Response::HTTP_OK);
         }
+
 
         return new JsonResponse([
             'my_price' => $skroutzPageMyPrice,
             'lowest_price' => $lowestPriceInPage,
             'success' => true,
-            'message' => 'Stock updated',
+            'message' => 'Success',
         ], Response::HTTP_OK);
     }
 

@@ -11,7 +11,6 @@ const test = () => {
     console.log('test');
 };
 
-// const puppeteer= import('puppeteer');
 test();
 
 $(document).ready(function () {
