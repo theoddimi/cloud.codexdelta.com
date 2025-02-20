@@ -40,7 +40,7 @@ class DomCrawlerController
         }
 
         $skroutzPageMerchantsPrices = $this->crawlAndFindMerchantPricesButNotMineFromHtml($skroutzProductPageHtml);
-
+dd($skroutzPageMerchantsPrices);
         if (count($skroutzPageMerchantsPrices) > 0) {
             ### Compare the results with my shop's price
             $lowestPriceInPage = min($skroutzPageMerchantsPrices);
