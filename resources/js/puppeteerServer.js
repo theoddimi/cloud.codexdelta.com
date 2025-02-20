@@ -2,7 +2,21 @@ import puppeteer from "puppeteer-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
 import { WebSocketServer } from "ws";
 
-const wss = new WebSocketServer({ port: 8080 });
+import http from 'http';
+
+var server = http.createServer(function(request, response) {
+    console.log((new Date()) + ' Received request for ' + request.url);
+    response.writeHead(404);
+    response.end();
+});
+server.listen(8080, function() {
+    console.log((new Date()) + ' Server is listening on port 8080');
+});
+
+
+const wss = new WebSocketServer({
+    server: server,
+});
 
 console.log("WebSocket server running on wss://cloud.codexdelta.com:8080");
 
