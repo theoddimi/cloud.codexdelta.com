@@ -28,7 +28,7 @@ class DomCrawlerController
 
         $urlToScrap = escapeshellarg($productFromFile['skroutz_page_url']);
         $nodeCommand = $_SERVER['DOCUMENT_ROOT'] . '/../resources/js/crawl.cjs ' . $urlToScrap;
-        $skroutzProductPageHtml = exec('node ' . $nodeCommand);
+        $skroutzProductPageHtml = shell_exec('node ' . $nodeCommand);
 
         $skroutzPageMyPrice = $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml);
 
