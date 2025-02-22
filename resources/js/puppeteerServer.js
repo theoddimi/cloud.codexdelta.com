@@ -1,6 +1,6 @@
 import puppeteer from "puppeteer-extra";
 import StealthPlugin from "puppeteer-extra-plugin-stealth";
-import { WebSocketServer } from "ws";
+import { WebSocketServer } from "wss";
 
 
 const wss = new WebSocketServer({ port: 8080 });
