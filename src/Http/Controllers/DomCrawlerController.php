@@ -49,7 +49,7 @@ class DomCrawlerController
     public function proxy(CdxRequest $request)
     {
         $skroutzProductPageUrl = $request->get('skroutz_product_url');
-dump($skroutzProductPageUrl);
+
         if($skroutzProductPageUrl === null) {
             return new JsonResponse([
                 'success' => false,
@@ -70,7 +70,7 @@ dump($skroutzProductPageUrl);
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // Follow redirects if any
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $skroutzProductPageUrl); // Send JSON data
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($skroutzProductPageUrl)); // Send JSON data
 
         // Execute the cURL request and capture the response
         $response = curl_exec($ch);
