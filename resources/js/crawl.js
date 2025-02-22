@@ -10,7 +10,7 @@ import puppeteer from 'puppeteer';
 
     try {
         const browser = await puppeteer.launch({
-            // executablePath: '/usr/bin/chromium-browser',
+            executablePath: '/usr/bin/chromium-browser',
             headless: true, // or false if you want to see the browser
             args: ['--no-sandbox', '--disable-setuid-sandbox'] // Important!
         });
