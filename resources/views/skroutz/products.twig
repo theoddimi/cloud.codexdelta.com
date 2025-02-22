@@ -22,35 +22,47 @@
 {% block javascripts %}
     {{ parent() }}
     <script>
-        const ws = new WebSocket("wss://cloud.codexdelta.com:8080");
-        ws.onopen = () => {
-            console.log("Connected to Puppeteer server");
-        };
 
-        ws.onmessage = (event) => {
-            console.log(event.data);
-            fetch(`/products/crawl/skroutz/fetch`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                    'X-CSRF-TOKEN': '{{ csrf }}'
-                },
-                body: JSON.stringify({
-                    skroutz_product_html: event.data,
-                })
-            })
-                .then(res=>res.clone().json())
-                .then(data => {
-                    if (data.success) {
-                        console.log(data.my_price);
-                        $('#result').html("<div style='width:450px; position:fixed; top:35%; left:35%; background: #ededed; text-align: center'><p>My Price: <span class='green'>" + data.my_price + "</span></p><p>Lowest Price: <span class='red'>" + data.lowest_price + "</span></p></div>")
-                        // $(this).parent().append('<p>Lowest price:<span class="red"><b>' + data.lowest_price + '&#8364;</b></span></p>')
-                    } else {
-                        alert(data.message);
-                    }
-                })
-                .catch(error => console.error("Error:", JSON.stringify(error)));
-        };
+        async function crawlFunc() {
+            try {
+                const response = await fetch("https://cloud.codexdelta.com/my-script:8080");
+                const data = await response.json();
+                console.log("Script Output:", data.output);
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+
+
+        {#const ws = new WebSocket("wss://cloud.codexdelta.com:8080");#}
+        {#ws.onopen = () => {#}
+        {#    console.log("Connected to Puppeteer server");#}
+        {#};#}
+
+        {#ws.onmessage = (event) => {#}
+        {#    console.log(event.data);#}
+        {#    fetch(`/products/crawl/skroutz/fetch`, {#}
+        {#        method: 'POST',#}
+        {#        headers: {#}
+        {#            'Content-Type': 'application/json',#}
+        {#            'X-CSRF-TOKEN': '{{ csrf }}'#}
+        {#        },#}
+        {#        body: JSON.stringify({#}
+        {#            skroutz_product_html: event.data,#}
+        {#        })#}
+        {#    })#}
+        {#        .then(res=>res.clone().json())#}
+        {#        .then(data => {#}
+        {#            if (data.success) {#}
+        {#                console.log(data.my_price);#}
+        {#                $('#result').html("<div style='width:450px; position:fixed; top:35%; left:35%; background: #ededed; text-align: center'><p>My Price: <span class='green'>" + data.my_price + "</span></p><p>Lowest Price: <span class='red'>" + data.lowest_price + "</span></p></div>")#}
+        {#                // $(this).parent().append('<p>Lowest price:<span class="red"><b>' + data.lowest_price + '&#8364;</b></span></p>')#}
+        {#            } else {#}
+        {#                alert(data.message);#}
+        {#            }#}
+        {#        })#}
+        {#        .catch(error => console.error("Error:", JSON.stringify(error)));#}
+        {#};#}
 
 
         $(document).ready(function() {
@@ -58,7 +70,7 @@
                 // let productId = $(this).data("eshop-product-id");
                 let productSkroutzUrl = $(this).data("skroutz-product-url");
 
-                ws.send(productSkroutzUrl);
+                crawlFunc();
             });
         });
 
