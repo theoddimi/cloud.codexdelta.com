@@ -28,6 +28,9 @@
                 const response = await fetch("https://cloud.codexdelta.com/products/crawl/skroutz/proxy");
                 const data = await response.json();
                 console.log("Script Output:", data.output);
+
+                $('#result').html("<div style='width:450px; position:fixed; top:35%; left:35%; background: #ededed; text-align: center'><p>My Price: <span class='green'>" + data.my_price + "</span></p><p>Lowest Price: <span class='red'>" + data.lowest_price + "</span></p></div>")
+                $(this).parent().append('<p>Lowest price:<span class="red"><b>' + data.lowest_price + '&#8364;</b></span></p>')
             } catch (error) {
                 console.error("Error:", error);
             }

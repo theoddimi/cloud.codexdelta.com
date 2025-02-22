@@ -10,10 +10,10 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DomCrawlerController
 {
-    public function crawl(CdxRequest $request)
+    public function crawl(string $response)
     {
         $issuesReadingPrices = [];
-        $skroutzProductPageHtml = $request->get('skroutz_product_html');
+        $skroutzProductPageHtml = $response;
         $skroutzProductsScrapList = config('skroutz_api_mappings', 'ref_eshop');
 //        $allProductsInListCount = count($skroutzProductsScrapList);
 
@@ -30,7 +30,7 @@ class DomCrawlerController
 //        $nodeCommand = $_SERVER['DOCUMENT_ROOT'] . '/../resources/js/crawl.cjs ' . $urlToScrap;
 //        $skroutzProductPageHtml = shell_exec('node ' . $nodeCommand);
 
-        $skroutzPageMyPrice = $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml);
+//        $skroutzPageMyPrice = $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml);
 
 //        if (!is_numeric($skroutzPageMyPrice)) {
 //            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['name'] =
@@ -39,25 +39,11 @@ class DomCrawlerController
 //                'Could not crawl the price for my shop for the given URL. Possible issue: Product not listed to specific page.';
 //        }
 
-        $skroutzPageMerchantsPrices = $this->crawlAndFindMerchantPricesButNotMineFromHtml($skroutzProductPageHtml);
+        return [
+            $this->crawlAndFindMerchantPricesButNotMineFromHtml($skroutzProductPageHtml),
+            $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml)
+        ];
 
-        if (count($skroutzPageMerchantsPrices) > 0) {
-            ### Compare the results with my shop's price
-            $lowestPriceInPage = min($skroutzPageMerchantsPrices);
-        } else {
-            return new JsonResponse([
-                'success' => false,
-                'message' => 'Issue reading prices',
-            ], Response::HTTP_OK);
-        }
-
-
-        return new JsonResponse([
-            'my_price' => $skroutzPageMyPrice,
-            'lowest_price' => $lowestPriceInPage,
-            'success' => true,
-            'message' => 'Success',
-        ], Response::HTTP_OK);
     }
 
     public function proxy()
@@ -74,18 +60,34 @@ class DomCrawlerController
 
         // Execute the cURL request and capture the response
         $response = curl_exec($ch);
-
+        curl_close($ch);
         // Check for errors in the cURL request
         if ($response === false) {
             echo "Error: " . curl_error($ch);
         } else {
             // You can parse the response here (for example, decode JSON)
-            echo $response;
+            [$skroutzPageMerchantsPrices, $skroutzPageMyPrice] = $this->crawl($response);
+
+            if (count($skroutzPageMerchantsPrices) > 0) {
+                ### Compare the results with my shop's price
+                $lowestPriceInPage = min($skroutzPageMerchantsPrices);
+            } else {
+                return new JsonResponse([
+                    'success' => false,
+                    'message' => 'Issue reading prices',
+                ], Response::HTTP_OK);
+            }
+
+
+            return new JsonResponse([
+                'my_price' => $skroutzPageMyPrice,
+                'lowest_price' => $lowestPriceInPage,
+                'success' => true,
+                'message' => 'Success',
+            ], Response::HTTP_OK);
         }
 
         // Close cURL session
-        curl_close($ch);
-
 
     }
 
