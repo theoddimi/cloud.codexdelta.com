@@ -49,7 +49,7 @@ class DomCrawlerController
     public function proxy(CdxRequest $request)
     {
         $skroutzProductPageUrl = $request->get('skroutz_product_url');
-
+dump($skroutzProductPageUrl);
         if($skroutzProductPageUrl === null) {
             return new JsonResponse([
                 'success' => false,
