@@ -22,7 +22,7 @@
 {% block javascripts %}
     {{ parent() }}
     <script>
-        const ws = new WebSocket("wss://cloud.codexdelta.com");
+        const ws = new WebSocket("ws://cloud.codexdelta.com");
         ws.onopen = () => {
             console.log("Connected to Puppeteer server");
         };
