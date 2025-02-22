@@ -22,6 +22,7 @@ return function()
             Router::put('/products/:productRetailSystemId/price/update', [StockBalanceController::class, 'updateEshopPriceProductAction']);
             Router::put('/products/:productRetailSystemId/stock/update', [StockBalanceController::class, 'updateEshopStockProductAction']);
             Router::post('/products/crawl/skroutz/fetch', [DomCrawlerController::class, 'crawl']);
+            Router::get('/products/crawl/skroutz/proxy', [DomCrawlerController::class, 'proxy']);
             Router::get('/warehouse/skroutz', [SkroutzController::class, 'index']);
     });
 };
