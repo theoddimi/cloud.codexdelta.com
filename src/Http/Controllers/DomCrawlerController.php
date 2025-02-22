@@ -70,7 +70,7 @@ class DomCrawlerController
         } else {
             // You can parse the response here (for example, decode JSON)
             [$skroutzPageMerchantsPrices, $skroutzPageMyPrice] = $this->crawl($response);
-
+dd($skroutzPageMyPrice);
             if (count($skroutzPageMerchantsPrices) > 0) {
                 ### Compare the results with my shop's price
                 $lowestPriceInPage = min($skroutzPageMerchantsPrices);
