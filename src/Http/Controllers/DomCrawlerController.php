@@ -50,7 +50,7 @@ class DomCrawlerController
     {
         $skroutzProductPageUrl = $request->get('skroutz_product_url');
 
-        if($skroutzProductPageHtml === null) {
+        if($skroutzProductPageUrl === null) {
             return new JsonResponse([
                 'success' => false,
                 'message' => 'Empty request body',

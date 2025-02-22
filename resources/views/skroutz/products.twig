@@ -34,25 +34,14 @@
                             'X-CSRF-TOKEN': '{{ csrf }}'
                         },
                         body: JSON.stringify({
-                            skroutz_product_html: url,
+                            skroutz_product_url: url,
                         })
-                    })
-                        .then(res=>res.clone().json())
-                        .then(data => {
-                            if (data.success) {
-                                console.log(data.my_price);
-                                $('#result').html("<div style='width:450px; position:fixed; top:35%; left:35%; background: #ededed; text-align: center'><p>My Price: <span class='green'>" + data.my_price + "</span></p><p>Lowest Price: <span class='red'>" + data.lowest_price + "</span></p></div>")
-                                // $(this).parent().append('<p>Lowest price:<span class="red"><b>' + data.lowest_price + '&#8364;</b></span></p>')
-                            } else {
-                                alert(data.message);
-                            }
-                        })
-                        .catch(error => console.error("Error:", JSON.stringify(error)));
-                // const data = await response.json();
-                // console.log("Script Output:", data.output);
+                    });
+                const data = await response.json();
+                console.log("Script Output:", data);
                 //
-                // $('#result').html("<div style='width:450px; position:fixed; top:35%; left:35%; background: #ededed; text-align: center'><p>My Price: <span class='green'>" + data.my_price + "</span></p><p>Lowest Price: <span class='red'>" + data.lowest_price + "</span></p></div>")
-                // $(this).parent().append('<p>Lowest price:<span class="red"><b>' + data.lowest_price + '&#8364;</b></span></p>')
+                $('#result').html("<div style='width:450px; position:fixed; top:35%; left:35%; background: #ededed; text-align: center'><p>My Price: <span class='green'>" + data.my_price + "</span></p><p>Lowest Price: <span class='red'>" + data.lowest_price + "</span></p></div>")
+                $(this).parent().append('<p>Lowest price:<span class="red"><b>' + data.lowest_price + '&#8364;</b></span></p>')
             } catch (error) {
                 console.error("Error:", error);
             }
