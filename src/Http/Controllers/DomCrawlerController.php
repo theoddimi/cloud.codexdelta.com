@@ -46,8 +46,11 @@ class DomCrawlerController
 
     }
 
-    public function proxy()
+    public function proxy(CdxRequest $request)
     {
+        $skroutzProductPageHtml = $request->get('skroutz_product_html');
+        $skroutzProductsScrapList = config('skroutz_api_mappings', 'ref_eshop');
+
         $url = 'http://127.0.0.1:8080/my-script'; // Call the Node.js route
 
         // Initialize cURL session
