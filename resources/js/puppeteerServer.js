@@ -5,8 +5,9 @@ const app = express();
 const PORT = 8080;
 
 // API route to run your script
-app.get("/my-script", (req, res) => {
-    exec("node ./resources/js/crawl.js", (error, stdout, stderr) => {
+app.post("/run-crawl", (req, res) => {
+    const inputData = req.body;
+    exec(`node ./resources/js/crawl.js '${JSON.stringify(inputData)}'`, (error, stdout, stderr) => {
         if (error) {
             console.error(`Error: ${stderr}`);
             return res.status(500).json({ success: false, error: stderr });
@@ -17,5 +18,5 @@ app.get("/my-script", (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
-    console.log(`Server runningc at http://localhost:${PORT}`);
+    console.log(`Server running at http://localhost:${PORT}`);
 });

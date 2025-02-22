@@ -48,10 +48,18 @@ class DomCrawlerController
 
     public function proxy(CdxRequest $request)
     {
-        $skroutzProductPageHtml = $request->get('skroutz_product_html');
+        $skroutzProductPageUrl = $request->get('skroutz_product_url');
+
+        if($skroutzProductPageHtml === null) {
+            return new JsonResponse([
+                'success' => false,
+                'message' => 'Empty request body',
+            ], Response::HTTP_OK);
+        }
+
         $skroutzProductsScrapList = config('skroutz_api_mappings', 'ref_eshop');
 
-        $url = 'http://127.0.0.1:8080/my-script'; // Call the Node.js route
+        $url = 'http://127.0.0.1:8080/run-crawl'; // Call the Node.js route
 
         // Initialize cURL session
         $ch = curl_init();
@@ -60,6 +68,9 @@ class DomCrawlerController
         curl_setopt($ch, CURLOPT_URL, $url); // Node.js script URL
         curl_setopt($ch, CURLOPT_RETURNTRANSFER, true); // Return response as a string
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // Follow redirects if any
+        curl_setopt($ch, CURLOPT_POST, true);
+        curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
+        curl_setopt($ch, CURLOPT_POSTFIELDS, $skroutzProductPageUrl); // Send JSON data
 
         // Execute the cURL request and capture the response
         $response = curl_exec($ch);
@@ -69,8 +80,8 @@ class DomCrawlerController
             echo "Error: " . curl_error($ch);
         } else {
             // You can parse the response here (for example, decode JSON)
-            [$skroutzPageMerchantsPrices, $skroutzPageMyPrice] = $this->crawl($response);
-dd($response);
+            [$skroutzPageMerchantsPrices, $skroutzPageMyPrice] = $this->crawl(json_decode($response)['output']);
+
             if (count($skroutzPageMerchantsPrices) > 0) {
                 ### Compare the results with my shop's price
                 $lowestPriceInPage = min($skroutzPageMerchantsPrices);
