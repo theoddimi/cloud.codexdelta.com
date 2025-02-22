@@ -32,12 +32,11 @@ import puppeteer from 'puppeteer';
         // const title = await page.title();
 
         const content = await page.content();
-
+        console.log(content);
         await browser.close();
 
-        // ws.send(`Title: ${title}`); // Send result back to client
-        ws.send(`${content}`); // Send result back to client
     } catch (error) {
-        ws.send(`Error: ${error.message}`);
+        console.error('Error:', error.message);
+        process.exit(1);
     }
 })();
