@@ -78,6 +78,7 @@ class DomCrawlerController
         if ($response === false) {
             echo "Error: " . curl_error($ch);
         } else {
+            dd($response);
             // You can parse the response here (for example, decode JSON)
             [$skroutzPageMerchantsPrices, $skroutzPageMyPrice] = $this->crawl(json_decode($response, true)['output']);
 
