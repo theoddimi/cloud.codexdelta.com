@@ -10,40 +10,31 @@ use Symfony\Component\HttpFoundation\Response;
 
 class DomCrawlerController
 {
-    public function crawl(string $response)
+    public function crawl(CdxRequest $request)
     {
         $issuesReadingPrices = [];
-        $skroutzProductPageHtml = $response;
+        $skroutzProductPageHtml = $request->get('skroutz_product_html');
         $skroutzProductsScrapList = config('skroutz_api_mappings', 'ref_eshop');
-//        $allProductsInListCount = count($skroutzProductsScrapList);
 
-//        $productFromFile = array_filter($skroutzProductsScrapList, fn($product) => $product['skroutz_page_url'] == $skroutzProductPageHtml);
-//        $productFromFile = reset($productFromFile);
-//        dd($productFromFile);
-//        if (false === $productFromFile) {
-//            return new JsonResponse([
-//                'success' => false,
-//            ], Response::HTTP_OK);
-//        }
+        $skroutzPageMerchantsPrices = $this->crawlAndFindMerchantPricesButNotMineFromHtml($skroutzProductPageHtml);
+        $skroutzPageMyPrice = $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml);
 
-//        $urlToScrap = escapeshellarg($productFromFile['skroutz_page_url']);
-//        $nodeCommand = $_SERVER['DOCUMENT_ROOT'] . '/../resources/js/crawl.cjs ' . $urlToScrap;
-//        $skroutzProductPageHtml = shell_exec('node ' . $nodeCommand);
+        if (count($skroutzPageMerchantsPrices) > 0) {
+            ### Compare the results with my shop's price
+            $lowestPriceInPage = min($skroutzPageMerchantsPrices);
+        } else {
+            return new JsonResponse([
+                'success' => false,
+                'message' => 'Issue reading prices',
+            ], Response::HTTP_OK);
+        }
 
-//        $skroutzPageMyPrice = $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml);
-
-//        if (!is_numeric($skroutzPageMyPrice)) {
-//            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['name'] =
-//                $productFromFile['skroutz_page_url'];
-//            $issuesReadingPrices[$productFromFile["eshop_product_id"]]['message'] =
-//                'Could not crawl the price for my shop for the given URL. Possible issue: Product not listed to specific page.';
-//        }
-
-        return [
-            $this->crawlAndFindMerchantPricesButNotMineFromHtml($skroutzProductPageHtml),
-            $this->crawlAndFindMyShopPriceFromHtml($skroutzProductPageHtml)
-        ];
-
+        return new JsonResponse([
+            'my_price' => $skroutzPageMyPrice,
+            'lowest_price' => $lowestPriceInPage,
+            'success' => true,
+            'message' => 'Success',
+        ], Response::HTTP_OK);
     }
 
     public function proxy(CdxRequest $request)

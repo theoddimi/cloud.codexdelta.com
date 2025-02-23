@@ -21,7 +21,8 @@ return function()
             Router::post('/logout', [AuthenticationController::class, 'logout']);
             Router::put('/products/:productRetailSystemId/price/update', [StockBalanceController::class, 'updateEshopPriceProductAction']);
             Router::put('/products/:productRetailSystemId/stock/update', [StockBalanceController::class, 'updateEshopStockProductAction']);
-            Router::post('/products/crawl/skroutz/proxy', [DomCrawlerController::class, 'proxy']);
+//            Router::post('/products/crawl/skroutz/proxy', [DomCrawlerController::class, 'proxy']);
+            Router::post('/products/crawl/skroutz/fetch', [DomCrawlerController::class, 'crawl']);
             Router::get('/warehouse/skroutz', [SkroutzController::class, 'index']);
     });
 };

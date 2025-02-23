@@ -1,41 +1,51 @@
-import express from "express";
-import { exec } from "child_process";
+import puppeteer from "puppeteer-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+import { WebSocketServer } from "ws";
 
-const app = express();
-const PORT = 8080;
+const wss = new WebSocketServer({ port: 8080 });
 
-// app.use(cors({
-//     origin: "*", // Allow all origins (*), or use "https://subdomain.domain.com"
-//     methods: ["GET", "POST"],
-//     allowedHeaders: ["Content-Type"]
-// }));
+console.log("WebSocket server running on ws://localhost:8080");
 
-app.use(express.json());
+wss.on("connection", (ws) => {
+    console.log("Client connected");
 
-// Debugging: Log all incoming requests
-// app.use((req, res, next) => {
-//     console.log(`Received ${req.method} request on ${req.url}`);
-//     console.log("Headers:", req.headers);
-//     console.log("Body:", req.body);
-//     next();
-// });
+    puppeteer.use(StealthPlugin());
+
+    ws.on("message", async (message) => {
+        const url = message.toString();
+        console.log(`Received request to scrape: ${url}`);
+
+        try {
+            const browser = await puppeteer.launch({
+                // executablePath: '/usr/bin/chromium-browser',
+                headless: true, // or false if you want to see the browser
+                args: ['--no-sandbox', '--disable-setuid-sandbox'] // Important!
+            });
 
 
-// API route to run your script
-app.post("/run-crawl", (req, res) => {
-    const inputData = req.body.crawl_url;
-    // const inputData = 'https://shybonsai.gr';
-console.error('hello', inputData, `node ./resources/js/crawl.js ${inputData}`)
-    exec(`node ./resources/js/crawl.js ${inputData}`, (error, stdout, stderr) => {
-        if (error) {
-            console.error(`Error: ${stderr}`);
-            return res.status(500).json({ success: false, error: stderr });
+            const page = await browser.newPage();
+
+            await page.setUserAgent(
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36"
+            );
+
+            await page.setExtraHTTPHeaders({
+                "Accept-Language": "en-US,en;q=0.9",
+                "Connection": "keep-alive",
+            });
+            await page.goto(url, { waitUntil: "domcontentloaded" });
+            // await page.goto(url, { waitUntil: 'networkidle2' });
+
+            // const title = await page.title();
+
+            const content = await page.content();
+
+            await browser.close();
+
+            // ws.send(`Title: ${title}`); // Send result back to client
+            ws.send(`${content}`); // Send result back to client
+        } catch (error) {
+            ws.send(`Error: ${error.message}`);
         }
-        res.json({ success: true, output: stdout });
     });
-});
-
-// Start the server
-app.listen(PORT, () => {
-    console.log(`Server running at http://localhost:${PORT}`);
 });
