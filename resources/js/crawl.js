@@ -13,7 +13,7 @@ import StealthPlugin from "puppeteer-extra-plugin-stealth";
         puppeteer.use(StealthPlugin());
 
         const browser = await puppeteer.launch({
-            // executablePath: '/usr/bin/chromium-browser',
+            executablePath: '/usr/bin/chromium-browser',
             headless: true, // or false if you want to see the browser
             args: ['--no-sandbox', '--disable-setuid-sandbox'] // Important!
         });
