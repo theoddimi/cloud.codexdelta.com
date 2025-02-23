@@ -3,6 +3,13 @@ import { exec } from "child_process";
 
 const app = express();
 const PORT = 8080;
+
+app.use(cors({
+    origin: "*", // Allow all origins (*), or use "https://subdomain.domain.com"
+    methods: ["GET", "POST"],
+    allowedHeaders: ["Content-Type"]
+}));
+
 app.use(express.json());
 
 // Debugging: Log all incoming requests
@@ -28,6 +35,6 @@ console.error('hello', inputData)
 });
 
 // Start the server
-app.listen(PORT, () => {
+app.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running at http://localhost:${PORT}`);
 });
