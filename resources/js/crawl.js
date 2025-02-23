@@ -1,16 +1,19 @@
-import puppeteer from 'puppeteer';
+import puppeteer from "puppeteer-extra";
+import StealthPlugin from "puppeteer-extra-plugin-stealth";
+
 
 (async () => {
     const url = process.argv[2]; // Get URL from arguments
-    console.error(url)
     if (!url) {
         console.error('No URL provided');
         process.exit(1);
     }
 
     try {
+        puppeteer.use(StealthPlugin());
+
         const browser = await puppeteer.launch({
-            executablePath: '/usr/bin/chromium-browser',
+            // executablePath: '/usr/bin/chromium-browser',
             headless: true, // or false if you want to see the browser
             args: ['--no-sandbox', '--disable-setuid-sandbox'] // Important!
         });
@@ -32,12 +35,12 @@ import puppeteer from 'puppeteer';
         // const title = await page.title();
 
         const content = await page.content();
-        console.log(content);
+
         await browser.close();
 
+        // ws.send(`Title: ${title}`); // Send result back to client
     } catch (error) {
         console.error('Error:', error.message);
-        console.error(url)
         process.exit(1);
     }
 })();
