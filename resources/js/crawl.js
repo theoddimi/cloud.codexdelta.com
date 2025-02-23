@@ -35,12 +35,12 @@ import StealthPlugin from "puppeteer-extra-plugin-stealth";
         // const title = await page.title();
 
         const content = await page.content();
-
+        console.log(content); // Send result back to parent process
         await browser.close();
 
-        // ws.send(`Title: ${title}`); // Send result back to client
+        // ws.send(`${content}`); // Send result back to client
     } catch (error) {
         console.error('Error:', error.message);
-        process.exit(1);
+        // ws.send(`Error: ${error.message}`);
     }
 })();

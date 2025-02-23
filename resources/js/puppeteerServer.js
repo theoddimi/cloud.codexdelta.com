@@ -24,8 +24,9 @@ app.use(express.json());
 // API route to run your script
 app.post("/run-crawl", (req, res) => {
     const inputData = req.body.crawl_url;
-console.error('hello', inputData)
-    exec(`node ./resources/js/crawl.js '${inputData}'`, (error, stdout, stderr) => {
+    // const inputData = 'https://shybonsai.gr';
+console.error('hello', inputData, `node ./resources/js/crawl.js ${inputData}`)
+    exec(`node ./resources/js/crawl.js ${inputData}`, (error, stdout, stderr) => {
         if (error) {
             console.error(`Error: ${stderr}`);
             return res.status(500).json({ success: false, error: stderr });
