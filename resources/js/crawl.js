@@ -1,8 +1,8 @@
 import puppeteer from 'puppeteer';
 
 (async () => {
-    // const url = process.argv[2]; // Get URL from arguments
-    const url = "https://shybonsai.gr"; // Get URL from arguments
+    const url = process.argv[2]; // Get URL from arguments
+    console.error(url)
     if (!url) {
         console.error('No URL provided');
         process.exit(1);
@@ -37,6 +37,7 @@ import puppeteer from 'puppeteer';
 
     } catch (error) {
         console.error('Error:', error.message);
+        console.error(url)
         process.exit(1);
     }
 })();

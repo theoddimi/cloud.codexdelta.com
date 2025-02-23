@@ -70,8 +70,7 @@ class DomCrawlerController
         curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true); // Follow redirects if any
         curl_setopt($ch, CURLOPT_POST, true);
         curl_setopt($ch, CURLOPT_HTTPHEADER, ["Content-Type: application/json"]);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode($skroutzProductPageUrl)); // Send JSON data
-
+        curl_setopt($ch, CURLOPT_POSTFIELDS, json_encode(['crawl_url' => $skroutzProductPageUrl])); // Send JSON data
         // Execute the cURL request and capture the response
         $response = curl_exec($ch);
         curl_close($ch);
@@ -80,7 +79,7 @@ class DomCrawlerController
             echo "Error: " . curl_error($ch);
         } else {
             // You can parse the response here (for example, decode JSON)
-            [$skroutzPageMerchantsPrices, $skroutzPageMyPrice] = $this->crawl(json_decode($response)['output']);
+            [$skroutzPageMerchantsPrices, $skroutzPageMyPrice] = $this->crawl(json_decode($response, true)['output']);
 
             if (count($skroutzPageMerchantsPrices) > 0) {
                 ### Compare the results with my shop's price
@@ -143,7 +142,6 @@ class DomCrawlerController
     {
         $pattern = '/(\d+,\d+)/';
         $crawler = new Crawler($html);
-
         $pricesNodes = $crawler->filter('li:not(#shop-' . env("SKROUTZ_SHY_BONSAI_SHOP_ID") . ') strong.dominant-price');
         $pricesCount = $pricesNodes->count();
         $prices = [];
